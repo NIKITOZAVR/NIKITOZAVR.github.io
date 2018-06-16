@@ -20,6 +20,9 @@
 		padding-left: 0;
 		padding-right: 0;
 	}
+	.header_img {
+		display: none;
+	}
 }
 @media all and (min-width: 768px) {
 	.md-50 {
