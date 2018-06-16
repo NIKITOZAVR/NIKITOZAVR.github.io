@@ -27,6 +27,11 @@
 		/* line-height: 23px; */
 		font-size: 14px;
 	}
+	h1 {
+		font-size: 30px;
+    line-height: 1;
+		margin: 10px 0;
+	}
 }
 @media all and (min-width: 768px) {
 	.md-50 {
