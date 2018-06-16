@@ -32,6 +32,9 @@
     line-height: 1;
 		margin: 10px 0;
 	}
+	.flex-wrapper--footer > div {
+		padding: 5px 20px;
+	}
 }
 @media all and (min-width: 768px) {
 	.md-50 {
@@ -61,5 +64,9 @@
 		font-size: 35px;
 		line-height: 1.4;
 		margin: 0;
+	}
+
+	.flex-wrapper--footer > div {
+		padding: 20px;
 	}
 }
