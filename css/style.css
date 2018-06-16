@@ -17,7 +17,7 @@ body {
   font-family: "roboto", sans-serif;
 	color: white;
 	background-image: url(../image/cherepiza.jpg);
-	background-size: 500px;
+	background-size: 200px;
 	background-attachment: fixed;
 }
 p, table {
@@ -217,7 +217,7 @@ h1+p {
 }
 .flex-wrapper--footer {
 	padding-top: 10px;
-	background: #a34f2d;
+	background: rgba(163, 79, 45, 0.9);
 }
 
 .sertificate {
