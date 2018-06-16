@@ -60,7 +60,7 @@ img {
   justify-content: space-between;
 }
 .flex-wrapper > div {
-	padding: 10px;
+	padding: 20px;
 }
 .flex-wrapper > .no-p {
 	padding: 0;
