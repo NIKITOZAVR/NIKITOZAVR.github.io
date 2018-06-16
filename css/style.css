@@ -139,7 +139,7 @@ h1+p {
 }
 .header_img {
 	position: absolute;
-  bottom: -14px;
+  bottom: 15px;
   right: 24px;
   width: 430px;
 }
@@ -165,6 +165,10 @@ h1+p {
 }
 .menu li {
 	padding: 5px 0;
+}
+.menu a {
+	position: relative;
+	z-index: 10;
 }
 
 .tal {
