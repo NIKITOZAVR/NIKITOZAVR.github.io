@@ -1,0 +1,83 @@
+<!DOCTYPE>
+<HTML>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Интернет-магазин "все для животных"</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media.css">
+    <link rel="stylesheet" href="js/remodal/remodal.css">
+    <link rel="stylesheet" href="js/remodal/remodal-default-theme.css">
+
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700&amp;subset=cyrillic" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Sacramento&amp;subset=cyrillic,cyrillic-ext" rel="stylesheet">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="js/jcarousel.js" charset="utf-8"></script>
+    <script type="text/javascript" src="js/jquery.validate.min.js"></script>
+    <script type="text/javascript" src="js/jquery.inputmask.min.js"></script>
+    <script src="js/script.js" charset="utf-8"></script>
+  <head>
+  <body>
+    <div class="wrapper remodal-bg"> <!--remodal-bg для размытия при модаль окне -->
+
+      <a href="#modal" id="popup__toggle">
+        <div class="circlephone" style="transform-origin: center;"></div>
+        <div class="circle-fill" style="transform-origin: center;"></div>
+        <div class="img-circle" style="transform-origin: center;">
+          <div class="img-circleblock" style="transform-origin: center;"></div>
+        </div>
+      </a>
+
+
+      <header class="header">
+        <img src="img/logo.jpg" alt="Интернет магазин 'все для животных'" class="header__logo">
+        <h1 class="header__header">Интернет магазин эксклюзивной еды</h1>
+
+      </header>
+
+
+      <nav class="menu clearfix">
+          <ul>
+                <li><a href="index.html" class="menu__link menu__link--company">На Главную</a></li>
+								<li><a href="about.html" class="menu__link menu__link--company">О компании</a></li>
+								<li><a href="contacts.html" class="menu__link menu__link--contacts">Контакты</a></li>
+								<li><a href="pay.html" class="menu__link menu__link--pay">Оплата</a></li>
+								<li><a href="delivery.html" class="menu__link menu__link--delivery">Доставка</a></li>
+								<li><a href="sale.html" class="menu__link menu__link--sale">Акции</a></li>
+								<li><a href="council.html" class="menu__link menu__link--council">Cоветы специалиста</a></li>
+								<li><a href="howto.html" class="menu__link menu__link--howto">Как заказать?</a></li>
+          </ul>
+      </nav>
+
+      <div class="menu__dropdown menu__dropdown--company">
+        <p>О компании</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae officiis soluta facere pariatur velit eveniet aliquam. Voluptatibus sunt culpa, ullam hic, similique voluptate asperiores? Nihil ipsam id deserunt exercitationem. Dignissimos quas cum expedita nemo assumenda, minus impedit totam velit, dolorem excepturi autem fugiat at soluta. Et quis adipisci aperiam aliquid voluptates incidunt, nostrum optio eum. Cumque, tempore itaque. Quidem dolores alias temporibus magnam ex laborum placeat esse voluptas eum, nisi beatae atque. Omnis veniam doloribus eaque rem cumque quasi dignissimos debitis, autem a blanditiis aliquam harum dolore est natus libero ab placeat, molestias dolor impedit illum expedita itaque. Repellat, ut.</p>
+      </div>
+
+      <style>
+        .menu__dropdown {
+          display: block;
+        }
+      </style>
+
+      <div class="remodal" data-remodal-id="modal">
+      <button data-remodal-action="close" class="remodal__close"></button>
+      <h1 class="remodal__header">Заказать обратный звонок<h1>
+
+      <form action="mail.php" method="post">
+          <input name="subject" type="hidden" value="Обратный звонок">
+              <div class="remodal__input-block">
+                <div class="remodal__input-img remodal__input-img2"></div>
+                <input name="name" class="remodal__nameform" type="text" placeholder="Введите Ваше Имя">
+                <input name="phone" class="remodal__phoneform" type="text" placeholder="Введите Ваш телефон">
+                <!-- <textarea name="message" class="remodal__messageform" placeholder="Тема сообщения / какой товар вам нужен"> -->
+                <!-- <textarea rows="10" cols="45" name="text"> -->
+                <textarea class="remodal__textarea" name="message" rows="5" cols="10" placeholder="Введите тему вашего сообщения (необязательно)"></textarea>
+              </div>
+          <button class="remodal__btn remodal__green-btn" >Заказать звонок</button>
+      </form>
+
+    <script src="js/remodal/remodal.min.js"></script>
+  </body>
+<HTML>
