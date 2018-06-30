@@ -1,0 +1,10 @@
+@media all and (min-width: 0px) {
+  .xs-100 {
+    width: 100%;
+  }
+}
+@media all and (min-width: 700px) {
+  .md-3-in-row {
+    width: 32%;
+  }
+}
