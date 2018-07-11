@@ -92,6 +92,7 @@
   .text-right {
     float: none;
     margin: 20px auto;
+    padding: 0 20px;
   }
   .main-page-body {
     background-position: bottom left -120px;
