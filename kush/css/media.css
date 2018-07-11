@@ -59,6 +59,20 @@
   }
 
 }
+@media all and (max-width: 601px) {
+  .menu {
+    margin-top: -266px;
+  }
+  .menu--active {
+    margin-top: 0;
+  }
+  .main-page-html {
+    background-size: 600px, cover;
+  }
+  #hamburger {
+    display: block;
+  }
+}
 @media all and (max-width: 949px) {
   body {
     padding-top: 0;
