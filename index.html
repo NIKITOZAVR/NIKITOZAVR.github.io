@@ -1,51 +1,140 @@
 <!DOCTYPE html>
-<html lang="ru" dir="ltr" class="main-page-html">
+<html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
+    <meta name="viewport" content="width=device-width, user-scalable=1">
     <title></title>
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,800&amp;subset=cyrillic" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/media.css">
-    <script src="js/jquery.js"></script>
-    <script src="js/script.js"></script>
   </head>
-  <body class="main-page-body">
-
-    <div id="hamburger">
-      <div id="hamburger__lines">
-        <div></div>
-        <div></div>
-        <div></div>
+  <body>
+    <div class="wrapper">
+    <div class="flex-wrapper">
+      <div class="xs-100 md-3-in-row">
+        <a class="zoom-bg-on-hover blueair" href="blueair/index.html">
+          <p>blueair</p>
+        </a>
+      </div>
+      <div class="xs-100 md-3-in-row">
+        <a class="zoom-bg-on-hover bus" href="bus/index.html">
+          <p>bus</p>
+        </a>
+      </div>
+      <div class="xs-100 md-3-in-row">
+        <a class="zoom-bg-on-hover violet" href="violet/index.html">
+          <p>violer</p>
+        </a>
+      </div>
+      <div class="xs-100 md-3-in-row">
+        <a class="zoom-bg-on-hover technomart" href="technomart/index.html">
+          <p>technomart</p>
+        </a>
+      </div>
+      <div class="xs-100 md-3-in-row ">
+        <a class="zoom-bg-on-hover youtube" href="youtube/index.html">
+          <p>youtube</p>
+        </a>
+      </div>
+      <div class="xs-100 md-3-in-row">
+        <a class="zoom-bg-on-hover zoomagazin" href="zoomagazin/index.html">
+          <p>zooshop</p>
+        </a>
+      </div>
+      <div class="xs-100 md-3-in-row">
+        <a class="zoom-bg-on-hover" href="kush/index.html">
+          <p>kusch</p>
+        </a>
       </div>
     </div>
-
-
-    <div class="menu clearfix">
-      <ul class="menu_list--left clearfix">
-        <li><a class="active-menu-link" href="">Главная</a></li>
-        <li><a href="services.html">Услуги</a></li>
-        <li><a href="">Портфолио</a></li>
-        <li><a href="">Контакты</a></li>
-      </ul>
-
-      <ul class="menu_list--right clearfix">
-        <li><a href="web-develop.html">Web-develop</a></li>
-        <li><a href="branding.html">Brending</a></li>
-        <li><a href="design.html">Graphic design</a></li>
-      </ul>
-
-
     </div>
-
-
-
-    <div class="text-right">
-      <p>570 px</p>
-      <p>Lorem ipsum dolor sit amet, quo porro paulo facilisis no, erat ullum quaestio est an. Ut nec dicant deserunt sapientem. At quot equidem cum, an maiestatis intellegebat qui. Id per persius pericula, cu vidit aliquid offendit vim. </p>
-    </div>
-
-
-    <img class="computer-img" src="" alt="">
   </body>
+
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    a {
+      text-decoration: none;
+      text-align: center;
+    }
+    body {
+      height: 100%;
+      min-height: 100%;
+      background: #464646;
+    }
+    .wrapper {
+      margin: 0 auto;
+      max-width: 1000px;
+    }
+    .flex-wrapper {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      align-items: center;
+    }
+    .flex-wrapper > div > a {
+      margin: 10px;
+      padding: 5px;
+      border-radius: 20px;
+      height: 333px;
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      overflow: hidden;
+
+    }
+    .flex-wrapper > div > a > p {
+      color: white;
+      font-size: 25px;
+      max-width: 180px;
+      width: 180px;
+      padding: 10px 0;
+      font-family: sans-serif;
+      background: rgb(70, 70, 70);
+      border-radius: 10px;
+    }
+    .zoom-bg-on-hover{
+      background-size: 500px;
+      transition: all .5s;
+      background-size: 500px;
+      background-position: center center;
+    }
+    .zoom-bg-on-hover:hover {
+      background-size: 600px;
+    }
+    .blueair {
+      background-image: url(origin/compressed/blueair.jpg);
+    }
+    .bus {
+      background-image: url(origin/compressed/bus.jpg);
+    }
+    .violet {
+      background-image: url(origin/compressed/violet.jpg);
+    }
+    .technomart {
+      background-image: url(origin/compressed/technomart.jpg);
+    }
+    .youtube {
+      background-image: url(origin/compressed/youtube.jpg);
+    }
+    .zoomagazin {
+      background-image: url(origin/compressed/zooshop.jpg);
+    }
+
+
+
+    @media all and (min-width: 1px) {
+      .xs-100 {
+        width: 100%;
+      }
+      .
+    }
+    @media all and (min-width: 501px) {
+      .md-3-in-row {
+        width: 33%;
+      }
+    }
+  </style>
 </html>
