@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Le saveur</title>
+    <meta name="viewport" content="width=device-width, user-scalable=no">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/remodal-default-theme.css">
+    <link rel="stylesheet" href="css/remodal.css">
+    <link href="https://fonts.googleapis.com/css?family=Forum" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function(){
+        $("#menu").on("click","a", function (event) {
+            event.preventDefault();
+            var id  = $(this).attr('href'),
+                top = $(id).offset().top;
+            $('body,html').animate({scrollTop: top}, 900);
+        });
+        $("#scroll_button_block").on("click","a", function (event) {
+            event.preventDefault();
+            var id  = $(this).attr('href'),
+                top = $(id).offset().top;
+            $('body,html').animate({scrollTop: top}, 1500);
+        });
+      });
+
+      function changeText(theTag,textto) {
+        theTag.innerHTML=textto;
+      }
+    </script>
+  </head>
+<body>
+
+
+<div class="wrapper remodal-bg">
+
+
+  <div class="header_block">
+
+
+    <h1 class="site_name ttu tac">Le saveur</h1>
+
+    <div id="menu" class="menu">
+      <ul>
+        <li><a href="#assorti">Главная</a></li>
+        <li><a href="#assorti">Услуги</a></li>
+        <li><a href="#about_us">О нас</a></li>
+        <li><a href="#contact">Контакты</a></li>
+      </ul>
+    </div>
+
+
+
+    <div class="logo_img_block">
+      <img src="img/LeSaveur_logo_header.png" alt="">
+    </div>
+
+
+  <a class="book_button" href="#modal">Заказать</a>
+
+
+    <div id="scroll_button_block" class="scroll_button_block">
+      <a href="#assorti">
+        <div class="scroll_img_block">
+          <div></div>
+        </div>
+        <p>Меню и цены</p>
+      </a>
+    </div>
+  </div><!--header_block-->
+
+
+  <div id="assorti" class="assorti_block">
+
+    <h2 class="assorti_header">Ассортимент</h2>
+    <h3 class="assorti_header2">Шикарная еда к вашему столу</h3>
+    <img src="img/leaves.png" alt="" class="leaves_img1">
+    <img src="img/leaves.png" alt="" class="leaves_img2">
+
+    <p class="male_female">Мужские Женские</p>
+
+    <div class="flex_wrapper xs-100 md-80 mauto tac">
+      <div class="xs-100 md-3-in-row">
+        <img class="food_pack_img" src="img/pack_office.jpg" alt="">
+        <p class="food_type_name food_type_name--office">Офис</p>
+        <p class="food_description"><b>1800 ккал, 4 блюда</b> (завтрак, ланч, 2 горячих блюда, 2 десерта)</p>
+        <a href="#modal" class="food_cost food_cost--office" onmouseover="changeText(this,'Заказать')" onmouseout="changeText(this,'от 419 грн.')">от 419 грн.</a>
+      </div>
+      <div class="xs-100 md-3-in-row">
+        <img class="food_pack_img" src="img/pack_bisness.jpg" alt="">
+        <p class="food_type_name food_type_name--bussines">Бизнес</p>
+        <p class="food_description" ><b>2100 ккал, 5 блюд</b> (завтрак, ланч, 3 горячих блюда, 2 десерта)</p>
+        <a href="#modal" class="food_cost food_cost--bussines" onmouseover="changeText(this,'Заказать')" onmouseout="changeText(this,'от 449 грн.')">от 449 грн.</a>
+      </div>
+      <div class="xs-100 md-3-in-row">
+        <img class="food_pack_img" src="img/pack_sport.jpg" alt="">
+        <p class="food_type_name food_type_name--sport">Спорт</p>
+          <p class="food_description" ><b>2400 ккал, 6 блюда</b> (4 горячих блюда, 2 десерта)</p>
+        <a href="#modal" class="food_cost food_cost--sport" onmouseover="changeText(this,'Заказать')" onmouseout="changeText(this,'от 449 грн.')">от 449 грн.</a>
+      </div>
+    </div>
+  </div><!--assorti_block-->
+
+
+
+  <div id="about_us" class="about_creator_block">
+
+    <h2 class="about_creator_header">О создателе</h2>
+
+
+
+    <img class="creator_photo" src="img/creator_img.jpg" alt="">
+
+    <p class="creator_name">Имя фамилия</p>
+    <p class="creator_description_text">Здравствуйте, уважаемый гость нашего сервиса. Меня зовут Мишин Кирилл, я - создатель и генеральный директор "Le Saveur" в Украине. Позвольте мне рассказать немного о себе, концепции сервиса, наших преимуществах, плюсах и неоспоримых достоинствах, которыми мы можем похвастаться.</p>
+
+    <p class="creator_description_text">В детстве и юношестве я был довольно полным юношей с множеством комплексов, которые мешали мне жить. Получая высшее образование пищевого технолога я параллельно начал заниматься спортом и изучать диетологию. Эти знания и хобби суммарно позволили мне профессионально заняться бодибилдингом, стать призером чемпионата, получить спортивное звание кандидата в мастера спорта и успешно работать тренером на протяжении семи лет, за которые я смог помочь нескольким сотням людей кардинально поменять их тело.</p>
+
+    <p class="creator_description_text">Идея создания сервиса здорового питания пришла ко мне вместе с озонанием, что многие люди даже если бы хотели питаться правильно и сбалансированно, то у большинства на это просто не хватает времени. Выбор продуктов, составление меню, готовка, уборка - это всё отнимает слишком много времени и сил у современного человека.</p>
+
+    <p class="creator_description_text">Наш сервис привезет Вам готовый разнообразный рацион в удобное для Вас время, а качество используемых нами продуктов - наивысшее, меню максимально сбалансированно, что позволит не только экономить время и силы, но и успешно избавляться от лишнего веса, улучшать показатели организма и органов, получать наслаждение от еды. Я лично проконсультирую Вас по вопросу подбора необходимой калорийности, чтобы Вы могли как можно быстрее оценить все преимущества данного формата питания. <p>
+
+    <p class="creator_description_text"><b>Оставляйте заявку на сайте и мы незамедлительно с Вами свяжемся.</b></p>
+
+
+
+  </div><!--about_creator_block-->
+
+
+
+
+
+
+  <div class="advantages_block tac">
+
+    <h2 class="advantages_creator_header">Преимущества</h2>
+    <h3 class="advantages_creator_header2">Le saceur - l'orme ipsun</h3>
+
+
+    <div class="flex_wrapper">
+      <div class="xs-100 md-3-in-row">
+        <img src="img/food_circle.png" alt="">
+        <p class="advantages_item_header">Design as a process</p>
+        <p class="advantages_item_desctiption">Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+      </div>
+      <div class="xs-100 md-3-in-row">
+        <img src="img/food_circle.png" alt="">
+        <p class="advantages_item_header">Design as a process</p>
+        <p class="advantages_item_desctiption">Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+      </div>
+      <div class="xs-100 md-3-in-row">
+        <img src="img/food_circle.png" alt="">
+        <p class="advantages_item_header">Design as a process</p>
+        <p class="advantages_item_desctiption">Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+      </div>
+    </div>
+
+
+  </div><!--advantages_block-->
+
+
+  <div id="contact"class="contact_block tac">
+
+        <h2 class="contact_header">Контакты</h2>
+        <p class="telephone telephone--contact">+38 066 755 6922</p>
+        <p class="address address--contact">Хрещатик 10, Киев, 02192</p>
+        <p class="address2 address--contact2">contact@.com</p>
+        <a href="" target="_blank" class="map_link">Показать на карте</a>
+
+  </div><!--contact_block-->
+
+  <div class="footer_block">
+
+
+
+      <img class="footer_logo_img" src="img/LeSaveur_logo_footer.png" alt="">
+      <p class="footer_logo_name">Le saveur</p>
+
+
+        <!-- <p class="telephone telephone--footer tac">+38 066 755 6922</p>
+        <p class="address address--footer tac">Хрещатик 10, Киев, 02192</p>
+        <p class="address address--footer2 tac">contact@.com</p> -->
+
+
+        <div class="flex_wrapper media_link_block">
+          <div class="xs-4-in-row md-4-in-row">
+            <a href="" class="media_link media_link--twitter">
+              <!-- <img src="img/twitter_logo.png" alt=""> -->
+            </a>
+          </div>
+          <div class="xs-4-in-row md-4-in-row">
+            <a href="" class="media_link media_link--facebook">
+              <!-- <img src="img/facebook_logo.png" alt=""> -->
+            </a>
+          </div>
+          <div class="xs-4-in-row md-4-in-row">
+            <a href="" class="media_link media_link--twitter2">
+              <!-- <img src="img/twitter_logo2.png" alt=""> -->
+            </a>
+          </div>
+          <div class="xs-4-in-row md-4-in-row">
+            <a href="" class="media_link media_link--instagram">
+              <!-- <img src="img/insta_logo.png" alt=""> -->
+            </a>
+          </div>
+        </div>
+
+
+
+
+
+
+
+  </div><!--footer_block-->
+
+</div><!--wrapper-->
+
+
+
+<div class="remodal" data-remodal-id="modal">
+    <button data-remodal-action="close" class="remodal__close"></button>
+    <h1 class="remodal__header">Осуществить заказ и узнать подробности вы можете отправив свой номер телефона<h1>
+
+    <form action="mail.php" method="post">
+        <input name="subject" type="hidden" value="Обратный звонок">
+            <div class="remodal__input-block">
+              <div class="remodal__input-img remodal__input-img2"></div>
+              <input name="name" class="remodal__nameform" type="text" placeholder="Введите Ваше Имя" onfocus="if (this.placeholder == 'Введите Ваше Имя') {this.placeholder = '';}" onblur="if (this.placeholder == '') {this.placeholder = 'Введите Ваше Имя';}">
+              <input name="phone" class="remodal__phoneform" type="text" placeholder="Введите Ваш телефон">
+              <textarea name="message" class="remodal__textarea" placeholder="Напишите кратко, что Вас интересует и наш мененджер с вами свяжется" onfocus="if (this.placeholder == 'Напишите кратко, что Вас интересует и наш мененджер с вами свяжется') {this.placeholder = '';}" onblur="if (this.placeholder == '') {this.placeholder = 'Напишите кратко, что Вас интересует и наш мененджер с вами свяжется';}"></textarea>
+
+            </div>
+        <button class="remodal__btn remodal__green-btn" onclick="this.innerHTML='Заявка принята'">Отправить</button>
+    </form>
+
+
+</div><!--remodal-->
+<script src="js/remodal.min.js"></script>
+
+
+</body>
+</html>
