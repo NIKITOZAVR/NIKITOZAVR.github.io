@@ -38,6 +38,10 @@ $(document).ready(function(){
   $('.hamburger').on('click', function() {
 		$('.scroll_top_block').toggleClass('active');
 	});
+  $('.map_link').on('click', function(e) {
+    e.preventDefault();
+		$('.contact_text_block').toggleClass('contact_text_block--innactive');
+	});
 
 
 

@@ -138,15 +138,15 @@ html, body {
 	bottom: 20px;
 	right: 20px;
 	border-radius: 40px;
-  background-color: rgba(67, 63, 63, 0.40);
-	height: 135px;
+  background-color: rgba(47, 112, 87, 0.7);
+	height: 115px;
 	transition: all .3s;
 	z-index: 100;
 	overflow: hidden;
 
 }
 .scroll_top_block.active {
-	height: 330px;
+	height: 280px;
 }
 .icon--footer {
 	display: block;
@@ -159,13 +159,16 @@ html, body {
 }
 .icon--scroll_block {
 	display: block;
-  width: 60px;
-  height: 60px;
+  width: 50px;
+  height: 50px;
   border-radius: 100%;
-  background-color: rgba(217, 217, 217, 0.96);
+  background-color: rgba(217, 217, 217, 0.39);
 	position: relative;
 	margin: 5px;
 
+}
+.up_icon, .hamburger {
+	background: none;
 }
 .icon_small:before {
 	content: "";
@@ -265,7 +268,7 @@ html, body {
 	right: -250px;
 }
 .leaves_img2 {
-  top: 680px;
+  top: 400px;
   left: -165px;
   width: 300px;
   z-index: 50;
@@ -609,7 +612,7 @@ html, body {
 	background-size: cover;
 	background-position: center center; */
 	font-family: "montserratregular";
-	color: #4d4d4d;
+	color: #ffffff;
 }
 .contact_block p, .contact_block h2, .contact_block a {
 	position: relative;
@@ -633,6 +636,16 @@ html, body {
 	font-size: 25px;
 	text-transform: none;
   color: #4d4d4d;
+}
+.contact_text_block {
+	padding: 1px 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  position: relative;
+  z-index: 100;
+	transition: all .5s;
+}
+.contact_text_block--innactive {
+	opacity: 0;
 }
 .telephone {
 	font-size: 64px;
@@ -671,7 +684,7 @@ html, body {
 	bottom: -10px;
 	left: 50%;
 	margin-left: -100px;
-	background-color: #4d4d4d;
+	background-color: #ffffff;
 
 }
 
@@ -970,6 +983,9 @@ html, body {
 	}
 	.advantages_text {
 		font-size: 13px;
+	}
+	.tabs__caption div {
+		font-size: 19px;
 	}
 
 
