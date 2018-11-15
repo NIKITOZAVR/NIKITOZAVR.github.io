@@ -47,4 +47,14 @@ $(document).ready(function(){
 
 
 
+  $(window).scroll(function(){
+		if ( $(document).scrollTop() > 500 ) {
+			$('.scroll_top_block').addClass('show');
+		} else {
+			$('.scroll_top_block').removeClass('show');
+		}
+	});
+
+
+
 });

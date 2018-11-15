@@ -143,10 +143,16 @@ html, body {
 	transition: all .3s;
 	z-index: 100;
 	overflow: hidden;
+	opacity: 0;
 
+}
+
+.scroll_top_block.show {
+	opacity: 1;
 }
 .scroll_top_block.active {
 	height: 280px;
+	opacity: 1;
 }
 .icon--footer {
 	display: block;
@@ -380,11 +386,12 @@ html, body {
 	padding: 20px;
 	position: relative;
 }
-
 .assorti_block {
 	margin-top: 0px;
 	z-index: 20;
-
+}
+.contact_block {
+	padding: 0;
 }
 .about_creator_block:before {
 	content: "";
@@ -635,7 +642,7 @@ html, body {
 	margin-top: 109px;
 	font-size: 25px;
 	text-transform: none;
-  color: #4d4d4d;
+  color: #ffffff;
 }
 .contact_text_block {
 	padding: 1px 0;
@@ -976,7 +983,7 @@ html, body {
 		display: none;
 	}
 	.contact_block {
-		padding: 10px;
+		/* padding: 10px; */
 	}
 	.telephone {
 		font-size: 31px;
