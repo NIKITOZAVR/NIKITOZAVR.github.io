@@ -3,7 +3,7 @@
    License: none (public domain)
 */
 
-.tag {
+wrapper--header.tag {
 	color: #c8b183; /* линия под названием сайта*/
 	color: #2f7057; /* кнопка заказать*/
 
@@ -103,7 +103,7 @@ html, body {
 	padding: 0 45px;
 	max-width: 1920px;
 	margin: auto;
-	background-color: #000000;
+	background-color: transparent;
 
 	position: relative;
 	z-index: 10;
@@ -114,6 +114,11 @@ html, body {
 	background-size: cover;
 	background-color: #000000;
 	background-image: url(../img/header_background.jpg);
+	padding-bottom: 30px;
+}
+.wrapper--assorti {
+	padding-top: 15px;
+	margin-top: -30px;
 }
 
 
@@ -685,29 +690,30 @@ html, body {
 
 
 
-
+.wrapper--no_ov_hidden {
+	overflow: visible !important;
+}
 @media all and (max-width: 1920px) {
 	.wrapper {
-		overflow: hid
-		den;
+		overflow-x: hidden;
 		max-width: 1920px;
 	}
 }
 @media all and (max-width: 1800px) {
 	.wrapper {
-		overflow: hidden;
+		overflow-x: hidden;
 		max-width: 1800px;
 	}
 }
 @media all and (max-width: 1680px) {
 	.wrapper {
-		overflow: hidden;
+		overflow-x: hidden;
 		max-width: 1680px;
 	}
 }
 @media all and (max-width: 1200px) {
 	.wrapper {
-		overflow: hidden;
+		overflow-x: hidden;
 		max-width: 1200px;
 	}
 	.menu li a {
@@ -750,7 +756,7 @@ html, body {
 }
 @media all and (max-width: 992px) {
 	.wrapper {
-		overflow: hidden;
+		overflow-x: hidden;
 		max-width: 992px;
 	}
 	.header_block {
@@ -794,7 +800,7 @@ html, body {
 @media all and (max-width: 768px) {
 	.wrapper {
 		padding: 0 20px;
-		overflow: hidden;
+		overflow-x: hidden;
 		max-width: 768px;
 	}
 	.header_block {
