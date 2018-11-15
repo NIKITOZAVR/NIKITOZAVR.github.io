@@ -129,7 +129,7 @@
           <img class="food_pack_img" src="img/pack_woman_active.jpg" alt="">
           <p class="food_type_name food_type_name--bussines">Актив</p>
           <p class="food_description" ><b>1400 ккал, 5 блюд</b> (завтрак, 2 горячих блюда, 2 десерта)</p>
-          <a href="#modal" class="food_cost food_cost--bussines" onmouseover="changeText(this,'Заказать')" onmouseout="changeText(this,'от 449 грн.')">от 419 грн.</a>
+          <a href="#modal" class="food_cost food_cost--bussines food_cost--bussines-w" onmouseover="changeText(this,'Заказать')" onmouseout="changeText(this,'от 449 грн.')">от 419 грн.</a>
         </div>
         <div class="xs-100 md-3-in-row">
           <img class="food_pack_img" src="img/pack_woman_sport.jpg" alt="">
@@ -140,6 +140,12 @@
       </div>
 
     </div>
+
+    <script>
+      function changeText(theTag,textto) {
+        theTag.innerHTML=textto;
+      }
+    </script>
 
   </div><!-- .tabs-->
 
@@ -229,7 +235,7 @@
 
 
   <div id="contact" class="contact_block tac">
-
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2540.651839447461!2d30.51983701573132!3d50.44758537947498!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4ce56b2456d3b%3A0xd062ae171b57e947!2z0YPQuy4g0JrRgNC10YnQsNGC0LjQuiwg0JrQuNC10LIsIDAyMDAw!5e0!3m2!1sru!2sua!4v1542319493699" frameborder="0" style="border:0" allowfullscreen></iframe>
         <h2 class="contact_header">Контакты</h2>
         <p class="telephone telephone--contact">+38 095 555 7501</p>
         <p class="address address--contact">Хрещатик 10, Киев, 02192</p>

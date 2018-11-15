@@ -27,9 +27,6 @@ $(document).ready(function(){
 
 
 
-  function changeText(theTag,textto) {
-    theTag.innerHTML=textto;
-  }
 
 
 	$('div.tabs__caption').on('click', 'div:not(.active)', function() {
