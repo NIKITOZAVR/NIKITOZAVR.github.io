@@ -32,7 +32,7 @@ table, caption, tbody, tfoot, thead, tr, th, td,
 article, aside, canvas, details, embed,
 figure, figcaption, footer, header, hgroup,
 menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
+time, mark, audio, video, input, textarea {
 	margin: 0;
 	padding: 0;
 	border: 0;
@@ -41,6 +41,7 @@ time, mark, audio, video {
 	vertical-align: baseline;
 	box-sizing: border-box;
 }
+
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
@@ -82,6 +83,7 @@ h3 {
 }
 img {
 	max-width: 100%;
+	width: 100%;
 }
 .tac {
 	text-align: center;
@@ -100,14 +102,19 @@ html, body {
 	padding: 0 45px;
 	max-width: 1920px;
 	margin: auto;
-	background-image: url(../img/header_background.jpg);
 	background-color: #000000;
-	background-repeat: no-repeat;
-	background-position: center top;
-	background-size: 100%;
+
 	position: relative;
 	z-index: 10;
 }
+.wrapper--header {
+	background-repeat: no-repeat;
+	background-position: center top;
+	background-size: cover;
+	background-color: #000000;
+	background-image: url(../img/header_background.jpg);
+}
+
 
 .flex_wrapper {
 	display: flex;
@@ -190,6 +197,10 @@ html, body {
   margin: auto;
   color: #ffffff;
 }
+.site_name--footer {
+	border-bottom: none;
+
+}
 .menu {
 	margin-top: 10px;
 	text-align: center;
@@ -199,7 +210,7 @@ html, body {
 }
 .menu li a {
 	display: block;
-	font-family: 'Forum', cursive;
+	font-family: 'montserratlight', cursive;
 	/* font-family: "montserratregular"; */
 	text-decoration: none;
 	width: 250px;
@@ -220,11 +231,12 @@ html, body {
 .logo_img_block img {
 	display: block;
 	margin: auto;
+	width: 280px;
 }
 .book_button {
 	display: block;
 	margin: 118px auto 0 auto;
-	background-color: #2f7057;
+	background-color: rgba(153, 153, 153, 0.33);
 	font-size: 18px;
 	text-transform: uppercase;
 	padding: 22px 0;
@@ -236,6 +248,7 @@ html, body {
 	text-decoration: none;
 	outline: none;
 	transition: all .5s;
+	font-family: "intro_regular";
 }
 .book_button:hover {
 	background-color: #214f3d;
@@ -348,10 +361,11 @@ html, body {
 }
 
 .food_pack_img {
-	box-shadow: 0px 30px 40px rgba(0, 0, 0, 0.32);
+	box-shadow: 40px 25px 40px rgba(0, 0, 0, 0.32);
+	max-width: 80%;
 
 }
-.assorti_block .flex_wrapper img {
+.assorti_block .flex_ img {
 	width: 80%;
 }
 
@@ -440,6 +454,7 @@ html, body {
 .creator_photo {
 	float: left;
   margin: 9px 50px 50px 0;
+	width: 100%;
 	max-width: 350px;
 	box-shadow: -6px 39px 45px #00000061;
 	transform: rotate(3deg);
@@ -455,7 +470,7 @@ html, body {
 .advantages_creator_header2 {
 	margin-top: 28px;
 }
-.advantages_block .flex_wrapper {
+.advantages_block .flex_. {
 	margin: 106px auto 128px auto;
 	max-width: 1490px;
 }
@@ -537,18 +552,7 @@ html, body {
 .footer_block {
 	position: relative;
 }
-.footer_logo_img {
-	position: absolute;
-	top: 12px;
-	left: 25px;
-	width: 120px;
-}
-.footer_logo_name {
-	position: absolute;
-	top: 52px;
-	right: 20px;
-	font-size: 37px;
-}
+
 .telephone--footer {
 	margin-top: 0px;
 }
@@ -613,7 +617,8 @@ html, body {
 
 @media all and (max-width: 1920px) {
 	.wrapper {
-		overflow: hidden;
+		overflow: hid
+		den;
 		max-width: 1920px;
 	}
 }
@@ -686,10 +691,13 @@ html, body {
 		font-size: 95px;
 	}
 	.logo_img_block {
-		margin: 50px 0 0 0;
+		margin: 30px 0 0 0;
 	}
 	.book_button {
     margin: 20px auto 0 auto;
+	}
+	.logo_img_block img {
+		width: 140px;
 	}
 
 
@@ -721,7 +729,7 @@ html, body {
 		max-width: 768px;
 	}
 	.header_block {
-		padding: 0;
+		padding: 15px 0 0 0;
 	}
 	.site_name {
 		width: 100%;
@@ -749,12 +757,7 @@ html, body {
 	.telephone {
 		font-size: 45px;
 	}
-	.footer_logo_img {
-		display: none;
-	}
-	.footer_logo_name {
-		display: none;
-	}
+
 	.about_creator_block:before {
 		content: "";
 		position: absolute;
@@ -815,10 +818,13 @@ html, body {
 	.creator_name {
 		margin-top: 40px;
 	}
+	.food_pack_img {
+		max-width: 220px;
+	}
 
 }
 
-@media all and (max-width: 600px) {
+@media all and (max-width: 768px) {
 	.xs-100 {
 		width: 100%;
 	}
@@ -827,6 +833,7 @@ html, body {
 	}
 }
 
+
 @media all and (max-width: 576px) {
 
 	.site_name {
@@ -834,20 +841,27 @@ html, body {
 		padding-bottom: 3px;
 	}
 	.menu li a {
-		font-size: 25px;
+		font-size: 20px;
+		width: 140px;
+		line-height: 30px;
 	}
-	.food_pack_img {
-		max-width: 220px;
-	}
+
 	.leaves_img1, .leaves_img2 {
 		display: none;
 	}
+	.contact_block {
+		padding: 10px;
+	}
+	.telephone {
+		font-size: 31px;
+	}
+
 
 
 }
 
 
-@media all and (min-width: 601px) {
+@media all and (min-width: 768px) {
 	.md-100 {
 		width: 100%;
 	}
@@ -876,44 +890,48 @@ html, body {
 }
 
 .remodal__header {
-  margin-bottom: 20px;
   font-size: 24px;
+	font-family: "intro_regular";
+	text-transform: none;
 }
-.remodal__phoneform, .remodal__nameform, .remodal__messageform {
-  width: 48%;
-  font-size: 20px;
-  height: 50px;
-  border: 1px solid orange;
-  border-radius: 10px;
-  margin: 1% 0;
+.remodal__input-desc-text {
+	text-align: left;
+	margin-bottom: 10px;
+	margin-top: 20px;
+	font-family: "montserratbold";
 }
-.remodal__phoneform:focus, .remodal__nameform:focus, .remodal__messageform:focus {
-  border: 1px solid red;
-  border-radius: 10px;
-  outline: none;
-}
+.remodal__phoneform, .remodal__nameform, .remodal__messageform,
 .remodal__textarea {
-  width: 97%;
-  height: 100px;
-  max-width: 97%;
-  text-align: left;
-  padding: 10px;
-  font-size: 20px;
+  font-size: 14px;
+  padding: 15px 5px 15px 10px;
   border-radius: 10px;
-  border: 1px solid orange;
+	background-color: #eef0f5;
+	border: 1px solid #d5d7db;
+	display: block;
+	width: 100%;
 }
+.remodal__phoneform:focus, .remodal__nameform:focus, .remodal__messageform:focus,
 .remodal__textarea:focus {
-  border: 1px solid red;
+  border: 1px solid #4849e2;
   border-radius: 10px;
   outline: none;
-
 }
+textarea {
+	height: 138px;
+}
+
+
 .remodal__btn {
-  margin-top: 20px;
-  width: 200px;
-  font-size: 22px;
+  margin: 20px auto 0 auto;
+  width: 80%;
+	font-family: "intro_regular";
+	display: block;
+  font-size: 16px;
+	text-align: center;
+	color: #ffffff;
   padding: 15px 0;
-  background: #fab400;
-  border: 1px solid orange;
+  background: #4849e2;
   border-radius: 10px;
+	border:none;
+	outline: none;
 }

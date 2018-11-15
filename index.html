@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="ru" dir="ltr">
   <head>
     <meta charset="utf-8">
     <title>Le saveur</title>
@@ -23,8 +23,12 @@
                 top = $(id).offset().top;
             $('body,html').animate({scrollTop: top}, 1500);
         });
-      });
 
+        $("a[href='#top']").click(function() {
+          $("html, body").animate({ scrollTop: 0 }, "slow");
+          return false;
+        });
+      });
       function changeText(theTag,textto) {
         theTag.innerHTML=textto;
       }
@@ -33,8 +37,8 @@
 <body>
 
 
-<div class="wrapper remodal-bg">
 
+<div class="wrapper wrapper--header remodal-bg">
 
   <div class="header_block">
 
@@ -70,7 +74,10 @@
     </div>
   </div><!--header_block-->
 
+</div>
 
+
+<div class="wrapper remodal-bg">
   <div id="assorti" class="assorti_block">
 
     <h2 class="assorti_header">Ассортимент</h2>
@@ -160,7 +167,7 @@
   </div><!--advantages_block-->
 
 
-  <div id="contact"class="contact_block tac">
+  <div id="contact" class="contact_block tac">
 
         <h2 class="contact_header">Контакты</h2>
         <p class="telephone telephone--contact">+38 066 755 6922</p>
@@ -174,13 +181,9 @@
 
 
 
-      <img class="footer_logo_img" src="img/LeSaveur_logo_footer.png" alt="">
-      <p class="footer_logo_name">Le saveur</p>
 
 
-        <!-- <p class="telephone telephone--footer tac">+38 066 755 6922</p>
-        <p class="address address--footer tac">Хрещатик 10, Киев, 02192</p>
-        <p class="address address--footer2 tac">contact@.com</p> -->
+      <p class="site_name site_name--footer ttu tac">Le saveur</p>
 
 
         <div class="flex_wrapper media_link_block">
@@ -220,18 +223,30 @@
 
 <div class="remodal" data-remodal-id="modal">
     <button data-remodal-action="close" class="remodal__close"></button>
-    <h1 class="remodal__header">Осуществить заказ и узнать подробности вы можете отправив свой номер телефона<h1>
+    <p class="remodal__header">Осуществить заказ и узнать подробности вы можете отправив свой номер телефона</p>
 
     <form action="mail.php" method="post">
         <input name="subject" type="hidden" value="Обратный звонок">
-            <div class="remodal__input-block">
-              <div class="remodal__input-img remodal__input-img2"></div>
-              <input name="name" class="remodal__nameform" type="text" placeholder="Введите Ваше Имя" onfocus="if (this.placeholder == 'Введите Ваше Имя') {this.placeholder = '';}" onblur="if (this.placeholder == '') {this.placeholder = 'Введите Ваше Имя';}">
-              <input name="phone" class="remodal__phoneform" type="text" placeholder="Введите Ваш телефон">
-              <textarea name="message" class="remodal__textarea" placeholder="Напишите кратко, что Вас интересует и наш мененджер с вами свяжется" onfocus="if (this.placeholder == 'Напишите кратко, что Вас интересует и наш мененджер с вами свяжется') {this.placeholder = '';}" onblur="if (this.placeholder == '') {this.placeholder = 'Напишите кратко, что Вас интересует и наш мененджер с вами свяжется';}"></textarea>
 
-            </div>
-        <button class="remodal__btn remodal__green-btn" onclick="this.innerHTML='Заявка принята'">Отправить</button>
+        <div class="flex_wrapper">
+
+          <div class="xs-100 md-45">
+            <p class="remodal__input-desc-text">Ваше имя</p>
+            <input name="name" class="remodal__nameform" type="text">
+            <p class="remodal__input-desc-text">Ваш телефон</p>
+            <input name="phone" class="remodal__phoneform" type="text">
+
+
+          </div>
+          <div class="xs-100 md-45">
+            <p class="remodal__input-desc-text">Комментарии</p>
+            <textarea name="message" class="remodal__textarea"></textarea>
+
+
+          </div>
+        </div>
+
+        <button class="remodal__btn" onclick="this.innerHTML='Заявка принята'">Отправить</button>
     </form>
 
 
