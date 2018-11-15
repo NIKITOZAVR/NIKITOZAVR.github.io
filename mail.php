@@ -21,7 +21,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST')
 
 function emailFormSubmission()
 {
-	$to = 'le_saveur@gmail.com';
+	$to = 'eo.lesaveur@gmail.com';
 	$subject = 'Заявка с сайта: Le saveur';
 
 	$message = '<!DOCTYPE><html><head><meta charset=UTF-8"><title>' . htmlentities($subject,ENT_COMPAT,'UTF-8') . '</title></head>';

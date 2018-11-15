@@ -2,6 +2,7 @@
    v2.0 | 20110126
    License: none (public domain)
 */
+
 .tag {
 	color: #c8b183; /* линия под названием сайта*/
 	color: #2f7057; /* кнопка заказать*/
@@ -126,6 +127,88 @@ html, body {
 	position: relative;
 }
 
+.scroll_top_block {
+	/* rgba(18, 18, 17, 0.8) */
+	position: fixed;
+	bottom: 20px;
+	right: 20px;
+	border-radius: 40px;
+	background-color: #433f3f;
+	height: 135px;
+	transition: all .3s;
+	z-index: 100;
+	overflow: hidden;
+
+}
+.scroll_top_block.active {
+	height: 330px;
+}
+.icon--footer {
+	display: block;
+  width: 60px;
+  height: 60px;
+  border-radius: 100%;
+  background-color: rgba(217, 217, 217, 0.17);
+	position: relative;
+
+}
+.icon--scroll_block {
+	display: block;
+  width: 60px;
+  height: 60px;
+  border-radius: 100%;
+  background-color: rgba(217, 217, 217, 0.17);
+	position: relative;
+	margin: 5px;
+
+}
+.icon_small:before {
+	content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -10px;
+  margin-left: -10px;
+  width: 20px;
+  background-image: url(../img/sprite_media.png);
+  background-size: 20px;
+  height: 20px;
+}
+.icon:before {
+	content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -10px;
+  margin-left: -10px;
+  width: 20px;
+  background-image: url(../img/sprite_media.png);
+  background-size: 20px;
+  height: 20px;
+}
+
+.icon--1:before {
+	background-position: 0 0;
+}
+.icon--2:before {
+	background-position: 0 -20px;
+}
+.icon--3:before {
+	background-position: 0 -40px;
+}
+.icon--4:before {
+	background-position: 0 -60px;
+}
+.icon--5:before {
+	background-position: 0 -80px;
+}
+.icon--6:before {
+	background-position: 0 -100px;
+}
+.icon--7:before {
+	background-position: 0 -120px;
+}
+
 @font-face {
     font-family: 'intro_regular';
     src: url('../font/intro-webfont.eot');
@@ -189,7 +272,7 @@ html, body {
 	color: #ffffff;
 }
 .site_name {
-	font-family: serif;
+	font-family: "times new roman", serif;
   font-size: 113px;
   padding-bottom: 13px;
   border-bottom: 4px solid #c8b183;
@@ -210,11 +293,10 @@ html, body {
 }
 .menu li a {
 	display: block;
-	font-family: 'montserratlight', cursive;
-	/* font-family: "montserratregular"; */
+	font-family: 'Comfortaa', cursive;
 	text-decoration: none;
 	width: 250px;
-	font-size: 27px;
+	font-size: 20px;
 	line-height: 40px;
 	color: #ffffff;
 	text-transform: uppercase;
@@ -292,7 +374,7 @@ html, body {
 }
 
 .assorti_block {
-	margin-top: 24px;
+	margin-top: 0px;
 	z-index: 20;
 
 }
@@ -351,13 +433,6 @@ html, body {
 
 .assorti_header {
 	margin-top: 7px;
-}
-.male_female {
-	text-align: center;
-	margin: 56px 0 -7px 0;
-	font-size: 50px;
-	font-family: "montserratbold";
-	color: #2c382c;
 }
 
 .food_pack_img {
@@ -449,7 +524,7 @@ html, body {
 	margin-top: 15px;
 	line-height: 1.3;
 	font-size: 20px;
-	font-family: 'Forum', cursive;
+	font-family: "times new roman", serif;
 }
 .creator_photo {
 	float: left;
@@ -463,30 +538,62 @@ html, body {
 
 .advantages_block {
 	margin-top: 53px;
+	background-image: url(../img/advantages_bg.png);
+	background-size: cover;
 }
 .advantages_creator_header {
-	margin-top: 97px;
+	margin-top: 24px;
 }
-.advantages_creator_header2 {
-	margin-top: 28px;
+.advantages_text {
+	text-align: center;
+	font-family: 'Comfortaa', cursive;
+	margin-left: 10px;
+	font-size: 19px;
 }
-.advantages_block .flex_. {
-	margin: 106px auto 128px auto;
-	max-width: 1490px;
+.advantages_block img {
+	max-width: 200px;
+
 }
-.advantages_item_header {
-	margin-top: 27px;
-	color: #2f7057;
-	font-size: 43px;
-	font-family: 'montserratbold';
+.advantages_block .flex_wrapper {
+	align-items: center;
 }
-.advantages_item_desctiption {
-	margin-top: 36px;
-	color: #2f7057;
-	font-size: 15px;
+.flex_wrapper--advantages_block {
+	margin: auto;
+	max-width: 1200px;
 }
 
-
+.tabs__content {
+  display: none; /* по умолчанию прячем все блоки */
+}
+.tabs__content.active {
+  display: block; /* по умолчанию показываем нужный блок */
+}
+.tabs__caption {
+	max-width: 600px;
+	margin: auto;
+}
+.tabs__caption div {
+	text-align: center;
+	font-size: 50px;
+	font-family: "montserratbold";
+	color: #2c382c;
+	font-size: 42px;
+	padding-bottom: 15px;
+	margin: 20px 0;
+	border-bottom: 3px solid transparent;
+}
+.tabs__caption div:hover {
+	cursor: pointer;
+}
+.tabs__caption > div.active {
+	border-bottom: 3px solid #b8866b;
+}
+.tabs__caption div:nth-child(1) {
+	padding-right: 7px;
+}
+.tabs__caption div:nth-child(2) {
+	padding-left: 7px;
+}
 
 .contact_block {
 	margin-top: 45px;
@@ -572,45 +679,9 @@ html, body {
 	max-width: 320px;
 	margin: auto;
 }
-.media_link {
-	display: block;
-  width: 60px;
-  height: 60px;
-  border-radius: 100%;
-  background-color: rgba(255, 255, 255, 0.4);
-	position: relative;
 
-}
 
-.media_link:before {
-	content: "";
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  margin-top: -10px;
-  margin-left: -10px;
-  width: 20px;
-  background-image: url(../img/sprite_media_link.png);
-  background-size: 20px;
-  height: 20px;
-}
 
-.media_link--twitter:before {
-	background-position: 0 0;
-}
-.media_link--facebook:before {
-	background-position: 0 -20px;
-}
-.media_link--twitter2:before {
-	background-position: 0 -40px;
-}
-.media_link--instagram:before {
-	background-position: 0 -60px;
-}
-
-.media_link img {
-	width: 20px;
-}
 
 
 
@@ -651,14 +722,12 @@ html, body {
 	h3 {
 		font-size: 34px;
 	}
-	.male_female {
-		margin: 38px 0 -7px 0;
-    font-size: 30px;
-	}
+
 	.about_creator_header {
 		margin-top: 30px;
 		margin-bottom: 30px;
 	}
+
 
 
 	.telephone--footer {
@@ -813,7 +882,7 @@ html, body {
 	.creator_photo {
 		float: none;
 		display: block;
-		margin: 20px auto 20px auto;
+		margin: 20px auto 50px auto;
 	}
 	.creator_name {
 		margin-top: 40px;
@@ -821,12 +890,28 @@ html, body {
 	.food_pack_img {
 		max-width: 220px;
 	}
+	.remodal-wrapper .flex_wrapper div {
+		margin: 0;
+	}
+	.flex_wrapper--advantages_block > div {
+		margin: 0;
+	}
+
 
 }
 
 @media all and (max-width: 768px) {
 	.xs-100 {
 		width: 100%;
+	}
+	.xs-20 {
+		width: 20%;
+	}
+	.xs-80 {
+		width: 80%;
+	}
+	.xs-50 {
+		width: 50%;
 	}
 	.xs-4-in-row {
 		width: 24%;
@@ -842,7 +927,7 @@ html, body {
 	}
 	.menu li a {
 		font-size: 20px;
-		width: 140px;
+		width: 250px;
 		line-height: 30px;
 	}
 
@@ -855,6 +940,9 @@ html, body {
 	.telephone {
 		font-size: 31px;
 	}
+	.advantages_text {
+		font-size: 13px;
+	}
 
 
 
@@ -865,27 +953,34 @@ html, body {
 	.md-100 {
 		width: 100%;
 	}
+	.md-80 {
+		width: 80%;
+	}
 	.md-3-in-row {
 		width: 33%;
-	}
-	.md-40 {
-		width: 40%;
-	}
-	.md-45 {
-		width: 45%;
-	}
-	.md-55 {
-		width: 55%;
 	}
 	.md-60 {
 		width: 60%;
 	}
+	.md-50 {
+		width: 49%;
+	}
+	.md-45 {
+		width: 45%;
+	}
+	.md-40 {
+		width: 40%;
+	}
+	.md-20 {
+		width: 20%;
+	}
+	.md-55 {
+		width: 55%;
+	}
 	.md-4-in-row {
 		width: 24%;
 	}
-	.md-80 {
-		width: 80%;
-	}
+
 
 }
 

@@ -7,35 +7,22 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/remodal-default-theme.css">
     <link rel="stylesheet" href="css/remodal.css">
+    <link href="https://fonts.googleapis.com/css?family=Comfortaa&amp;subset=cyrillic" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Forum" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script type="text/javascript">
-      $(document).ready(function(){
-        $("#menu").on("click","a", function (event) {
-            event.preventDefault();
-            var id  = $(this).attr('href'),
-                top = $(id).offset().top;
-            $('body,html').animate({scrollTop: top}, 900);
-        });
-        $("#scroll_button_block").on("click","a", function (event) {
-            event.preventDefault();
-            var id  = $(this).attr('href'),
-                top = $(id).offset().top;
-            $('body,html').animate({scrollTop: top}, 1500);
-        });
+    <script src="js/script.js" charset="utf-8"></script>
 
-        $("a[href='#top']").click(function() {
-          $("html, body").animate({ scrollTop: 0 }, "slow");
-          return false;
-        });
-      });
-      function changeText(theTag,textto) {
-        theTag.innerHTML=textto;
-      }
-    </script>
   </head>
 <body>
 
+
+<div class="scroll_top_block">
+  <a class="icon_small icon--1 icon--scroll_block" href="#scroll_top"></a>
+  <div class="icon icon--2 icon--scroll_block hamburger"></div>
+  <a href="#modal" class="icon icon--3 icon--scroll_block"></a>
+  <div class="icon icon--5 icon--scroll_block"></div>
+  <div class="icon icon--7 icon--scroll_block"></div>
+</div>
 
 
 <div class="wrapper wrapper--header remodal-bg">
@@ -45,11 +32,20 @@
 
     <h1 class="site_name ttu tac">Le saveur</h1>
 
-    <div id="menu" class="menu">
+    <!-- <div id="menu" class="menu">
       <ul>
-        <li><a href="#assorti">Главная</a></li>
+        <li><a href="#logo">Главная</a></li>
         <li><a href="#assorti">Услуги</a></li>
         <li><a href="#about_us">О нас</a></li>
+        <li><a href="#contact">Контакты</a></li>
+      </ul>
+    </div> -->
+    <div id="menu" class="menu">
+      <ul>
+        <li><a href="#logo">Главная</a></li>
+        <li><a href="#assorti">Ассортимент</a></li>
+        <li><a href="#about_us">О создателе</a></li>
+        <li><a href="#advantages">Преимущества</a></li>
         <li><a href="#contact">Контакты</a></li>
       </ul>
     </div>
@@ -57,7 +53,7 @@
 
 
     <div class="logo_img_block">
-      <img src="img/LeSaveur_logo_header.png" alt="">
+      <img id="logo" src="img/LeSaveur_logo_header.png" alt="">
     </div>
 
 
@@ -80,33 +76,77 @@
 <div class="wrapper remodal-bg">
   <div id="assorti" class="assorti_block">
 
-    <h2 class="assorti_header">Ассортимент</h2>
-    <h3 class="assorti_header2">Шикарная еда к вашему столу</h3>
-    <img src="img/leaves.png" alt="" class="leaves_img1">
-    <img src="img/leaves.png" alt="" class="leaves_img2">
+  <h2 class="assorti_header">Ассортимент</h2>
+  <h3 class="assorti_header2">Шикарные блюда</h3>
+  <img src="img/leaves.png" alt="" class="leaves_img1">
+  <img src="img/leaves.png" alt="" class="leaves_img2">
 
-    <p class="male_female">Мужские Женские</p>
 
-    <div class="flex_wrapper xs-100 md-80 mauto tac">
-      <div class="xs-100 md-3-in-row">
-        <img class="food_pack_img" src="img/pack_office.jpg" alt="">
-        <p class="food_type_name food_type_name--office">Офис</p>
-        <p class="food_description"><b>1800 ккал, 4 блюда</b> (завтрак, ланч, 2 горячих блюда, 2 десерта)</p>
-        <a href="#modal" class="food_cost food_cost--office" onmouseover="changeText(this,'Заказать')" onmouseout="changeText(this,'от 419 грн.')">от 419 грн.</a>
-      </div>
-      <div class="xs-100 md-3-in-row">
-        <img class="food_pack_img" src="img/pack_bisness.jpg" alt="">
-        <p class="food_type_name food_type_name--bussines">Бизнес</p>
-        <p class="food_description" ><b>2100 ккал, 5 блюд</b> (завтрак, ланч, 3 горячих блюда, 2 десерта)</p>
-        <a href="#modal" class="food_cost food_cost--bussines" onmouseover="changeText(this,'Заказать')" onmouseout="changeText(this,'от 449 грн.')">от 449 грн.</a>
-      </div>
-      <div class="xs-100 md-3-in-row">
-        <img class="food_pack_img" src="img/pack_sport.jpg" alt="">
-        <p class="food_type_name food_type_name--sport">Спорт</p>
-          <p class="food_description" ><b>2400 ккал, 6 блюда</b> (4 горячих блюда, 2 десерта)</p>
-        <a href="#modal" class="food_cost food_cost--sport" onmouseover="changeText(this,'Заказать')" onmouseout="changeText(this,'от 449 грн.')">от 449 грн.</a>
-      </div>
+  <div class="tabs">
+
+    <div class="flex_wrapper tabs__caption">
+
+      <div class="xs-100 md-50 active">Мужские</div>
+      <div class="xs-100 md-50">Женские</div>
     </div>
+
+    <div class="tabs__content active">
+
+      <div class="flex_wrapper xs-100 md-80 mauto tac">
+        <div class="xs-100 md-3-in-row">
+          <img class="food_pack_img" src="img/pack_office.jpg" alt="">
+          <p class="food_type_name food_type_name--office">Офис</p>
+          <p class="food_description"><b>1800 ккал, 4 блюда</b> (завтрак, ланч, 2 горячих блюда, 2 десерта)</p>
+          <a href="#modal" class="food_cost food_cost--office" onmouseover="changeText(this,'Заказать')" onmouseout="changeText(this,'от 419 грн.')">от 419 грн.</a>
+        </div>
+        <div class="xs-100 md-3-in-row">
+          <img class="food_pack_img" src="img/pack_bisness.jpg" alt="">
+          <p class="food_type_name food_type_name--bussines">Бизнес</p>
+          <p class="food_description" ><b>2100 ккал, 5 блюд</b> (завтрак, ланч, 3 горячих блюда, 2 десерта)</p>
+          <a href="#modal" class="food_cost food_cost--bussines" onmouseover="changeText(this,'Заказать')" onmouseout="changeText(this,'от 449 грн.')">от 449 грн.</a>
+        </div>
+        <div class="xs-100 md-3-in-row">
+          <img class="food_pack_img" src="img/pack_sport.jpg" alt="">
+          <p class="food_type_name food_type_name--sport">Спорт</p>
+            <p class="food_description" ><b>2400 ккал, 6 блюд</b> (завтрак, ланч, 4 горячих блюда, 2 десерта)</p>
+          <a href="#modal" class="food_cost food_cost--sport" onmouseover="changeText(this,'Заказать')" onmouseout="changeText(this,'от 449 грн.')">от 489 грн.</a>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="tabs__content">
+
+
+      <div class="flex_wrapper xs-100 md-80 mauto tac">
+        <div class="xs-100 md-3-in-row">
+          <img class="food_pack_img" src="img/pack_woman_office.jpg" alt="">
+          <p class="food_type_name food_type_name--office">Офис</p>
+          <p class="food_description"><b>1100 ккал, 4 блюда</b> (завтрак, ланч, 2 горячих блюда, 2 десерта)</p>
+          <a href="#modal" class="food_cost food_cost--office" onmouseover="changeText(this,'Заказать')" onmouseout="changeText(this,'от 419 грн.')">от 349 грн.</a>
+        </div>
+        <div class="xs-100 md-3-in-row">
+          <img class="food_pack_img" src="img/pack_woman_active.jpg" alt="">
+          <p class="food_type_name food_type_name--bussines">Актив</p>
+          <p class="food_description" ><b>1400 ккал, 5 блюд</b> (завтрак, 2 горячих блюда, 2 десерта)</p>
+          <a href="#modal" class="food_cost food_cost--bussines" onmouseover="changeText(this,'Заказать')" onmouseout="changeText(this,'от 449 грн.')">от 419 грн.</a>
+        </div>
+        <div class="xs-100 md-3-in-row">
+          <img class="food_pack_img" src="img/pack_woman_sport.jpg" alt="">
+          <p class="food_type_name food_type_name--sport">Спорт</p>
+            <p class="food_description" ><b>1700 ккал, 6 блюд</b> завтрак, ланч, 2 горячих блюда, 2 десердта)</p>
+          <a href="#modal" class="food_cost food_cost--sport" onmouseover="changeText(this,'Заказать')" onmouseout="changeText(this,'от 449 грн.')">от 419 грн.</a>
+        </div>
+      </div>
+
+    </div>
+
+  </div><!-- .tabs-->
+
+
+
+
+
   </div><!--assorti_block-->
 
 
@@ -119,7 +159,7 @@
 
     <img class="creator_photo" src="img/creator_img.jpg" alt="">
 
-    <p class="creator_name">Имя фамилия</p>
+    <!-- <p class="creator_name">Имя фамилия</p> -->
     <p class="creator_description_text">Здравствуйте, уважаемый гость нашего сервиса. Меня зовут Мишин Кирилл, я - создатель и генеральный директор "Le Saveur" в Украине. Позвольте мне рассказать немного о себе, концепции сервиса, наших преимуществах, плюсах и неоспоримых достоинствах, которыми мы можем похвастаться.</p>
 
     <p class="creator_description_text">В детстве и юношестве я был довольно полным юношей с множеством комплексов, которые мешали мне жить. Получая высшее образование пищевого технолога я параллельно начал заниматься спортом и изучать диетологию. Эти знания и хобби суммарно позволили мне профессионально заняться бодибилдингом, стать призером чемпионата, получить спортивное звание кандидата в мастера спорта и успешно работать тренером на протяжении семи лет, за которые я смог помочь нескольким сотням людей кардинально поменять их тело.</p>
@@ -139,28 +179,49 @@
 
 
 
-  <div class="advantages_block tac">
+  <div id="advantages" class="advantages_block tac">
 
     <h2 class="advantages_creator_header">Преимущества</h2>
-    <h3 class="advantages_creator_header2">Le saceur - l'orme ipsun</h3>
 
 
-    <div class="flex_wrapper">
-      <div class="xs-100 md-3-in-row">
-        <img src="img/food_circle.png" alt="">
-        <p class="advantages_item_header">Design as a process</p>
-        <p class="advantages_item_desctiption">Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+    <div class="flex_wrapper flex_wrapper--advantages_block">
+      <div class="xs-100 md-50">
+        <div class="flex_wrapper">
+          <div class="md-20 xs-20">
+            <img src="img/advantages_img_1.png" alt="" class="advantages_img">
+          </div>
+          <div class="md-80 xs-80">
+            <p class="advantages_text">Правильно подобранная калорийность</p>
+          </div>
+        </div>
+        <div class="flex_wrapper">
+          <div class="md-20 xs-20">
+            <img src="img/advantages_img_3.png" alt="" class="advantages_img">
+          </div>
+          <div class="md-80 xs-80">
+            <p class="advantages_text">Экономия времени</p>
+          </div>
+        </div>
       </div>
-      <div class="xs-100 md-3-in-row">
-        <img src="img/food_circle.png" alt="">
-        <p class="advantages_item_header">Design as a process</p>
-        <p class="advantages_item_desctiption">Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+      <div class="xs-100 md-50">
+        <div class="flex_wrapper">
+          <div class="md-20 xs-20">
+            <img src="img/advantages_img_3.png" alt="" class="advantages_img">
+          </div>
+          <div class="md-80 xs-80">
+            <p class="advantages_text">Максимальная польза для здоровья</p>
+          </div>
+        </div>
+        <div class="flex_wrapper">
+          <div class="md-20 xs-20">
+            <img src="img/advantages_img_4.png" alt="" class="advantages_img">
+          </div>
+          <div class="md-80 xs-80">
+            <p class="advantages_text">Наши блюда потрясающе вкусны</p>
+          </div>
+        </div>
       </div>
-      <div class="xs-100 md-3-in-row">
-        <img src="img/food_circle.png" alt="">
-        <p class="advantages_item_header">Design as a process</p>
-        <p class="advantages_item_desctiption">Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
-      </div>
+
     </div>
 
 
@@ -170,9 +231,9 @@
   <div id="contact" class="contact_block tac">
 
         <h2 class="contact_header">Контакты</h2>
-        <p class="telephone telephone--contact">+38 066 755 6922</p>
+        <p class="telephone telephone--contact">+38 095 555 7501</p>
         <p class="address address--contact">Хрещатик 10, Киев, 02192</p>
-        <p class="address2 address--contact2">contact@.com</p>
+        <p class="address2 address--contact2">ceo.lesaveur@gmail.com</p>
         <a href="" target="_blank" class="map_link">Показать на карте</a>
 
   </div><!--contact_block-->
@@ -188,24 +249,16 @@
 
         <div class="flex_wrapper media_link_block">
           <div class="xs-4-in-row md-4-in-row">
-            <a href="" class="media_link media_link--twitter">
-              <!-- <img src="img/twitter_logo.png" alt=""> -->
-            </a>
+            <a href="" class="icon icon--4 icon--footer"></a>
           </div>
           <div class="xs-4-in-row md-4-in-row">
-            <a href="" class="media_link media_link--facebook">
-              <!-- <img src="img/facebook_logo.png" alt=""> -->
-            </a>
+            <a href="" class="icon icon--5 icon--footer"></a>
           </div>
           <div class="xs-4-in-row md-4-in-row">
-            <a href="" class="media_link media_link--twitter2">
-              <!-- <img src="img/twitter_logo2.png" alt=""> -->
-            </a>
+            <a href="" class="icon icon--6 icon--footer"></a>
           </div>
           <div class="xs-4-in-row md-4-in-row">
-            <a href="" class="media_link media_link--instagram">
-              <!-- <img src="img/insta_logo.png" alt=""> -->
-            </a>
+            <a href="" class="icon icon--7 icon--footer"></a>
           </div>
         </div>
 
