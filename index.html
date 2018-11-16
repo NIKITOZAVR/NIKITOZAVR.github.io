@@ -19,7 +19,7 @@
 <div class="scroll_top_block">
   <a class="icon_small icon--1 icon--scroll_block up_icon" href="#scroll_top"></a>
   <div class="icon icon--2 icon--scroll_block hamburger"></div>
-  <a href="#modal" class="icon icon--3 icon--scroll_block"></a>
+  <a href="#modal2" class="icon icon--3 icon--scroll_block"></a>
   <div class="icon icon--5 icon--scroll_block"></div>
   <div class="icon icon--7 icon--scroll_block"></div>
 </div>
@@ -79,7 +79,6 @@
   <h2 class="assorti_header">Ассортимент</h2>
   <h3 class="assorti_header2">Шикарные блюда</h3>
   <img src="img/leaves.png" alt="" class="leaves_img1">
-  <!-- <img src="img/leaves.png" alt="" class="leaves_img2"> -->
 
 
   <div class="tabs">
@@ -282,7 +281,7 @@
 
 
 
-<div class="remodal" data-remodal-id="modal">
+<div class="remodal" data-remodal-id="modal2">
     <button data-remodal-action="close" class="remodal__close"></button>
     <p class="remodal__header">Осуществить заказ и узнать подробности вы можете отправив свой номер телефона</p>
 
@@ -299,8 +298,119 @@
 
 
           </div>
-          <div class="xs-100 md-45">
-            <p class="remodal__input-desc-text">Комментарии</p>
+          <div class="xs-100 md-50">
+            <p class="remodal__input-desc-text">Ваш заказ</p>
+            <div class="flex_wrapper">
+              <div class="xs-100 md-40">
+                <img class="book_pic" src="img/pack_woman_sport.jpg" alt="">
+              </div>
+              <div class="xs-100 md-60">
+                <div class="book_number_block">
+                  <div class="minus">-</div>
+                  <div class="plus">+</div>
+                  <div class="number">0</div>
+                </div>
+                <p class="book_food_text"><b>""Спорт" 1400 ккал, 5 блюд</b> (завтрак, 2 горячих блюда, 2 десерта) </p>
+              </div>
+            </div>
+
+
+          </div>
+        </div>
+
+
+          <p class="add_food_header">Добавить ассортимент</p>
+
+
+        <div class="flex_wrapper">
+
+          <div class="xs-100 md-50">
+            <div class="flex_wrapper">
+              <div class="xs-100 md-40">
+                <img class="book_pic" src="img/pack_woman_sport.jpg" alt="">
+              </div>
+              <div class="xs-100 md-60">
+                <div class="book_number_block">
+                  <div class="minus">-</div>
+                  <div class="plus">+</div>
+                  <div class="number">0</div>
+                </div>
+                <p class="book_food_text"><b>"Спорт" 1400 ккал, 5 блюд</b> (завтрак, 2 горячих блюда, 2 десерта). </p>
+              </div>
+            </div>
+          </div>
+          <div class="xs-100 md-50">
+            <div class="flex_wrapper">
+              <div class="xs-100 md-40">
+                <img class="book_pic" src="img/pack_woman_sport.jpg" alt="">
+              </div>
+              <div class="xs-100 md-60">
+                <div class="book_number_block">
+                  <div class="minus">-</div>
+                  <div class="plus">+</div>
+                  <div class="number">0</div>
+                </div>
+                <p class="book_food_text"><b>"Спорт" 1400 ккал, 5 блюд</b> (завтрак, 2 горячих блюда, 2 десерта). </p>
+              </div>
+            </div>
+          </div>
+          <div class="xs-100 md-50">
+            <div class="flex_wrapper">
+              <div class="xs-100 md-40">
+                <img class="book_pic" src="img/pack_woman_sport.jpg" alt="">
+              </div>
+              <div class="xs-100 md-60">
+                <div class="book_number_block">
+                  <div class="minus">-</div>
+                  <div class="plus">+</div>
+                  <div class="number">0</div>
+                </div>
+                <p class="book_food_text"><b>"Спорт" 1400 ккал, 5 блюд</b> (завтрак, 2 горячих блюда, 2 десерта). </p>
+              </div>
+            </div>
+          </div>
+          <div class="xs-100 md-50">
+            <div class="flex_wrapper">
+              <div class="xs-100 md-40">
+                <img class="book_pic" src="img/pack_woman_sport.jpg" alt="">
+              </div>
+              <div class="xs-100 md-60">
+                <div class="book_number_block">
+                  <div class="minus">-</div>
+                  <div class="plus">+</div>
+                  <div class="number">0</div>
+                </div>
+                <p class="book_food_text"><b>"Спорт" 1400 ккал, 5 блюд</b> (завтрак, 2 горячих блюда, 2 десерта). </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <button class="remodal__btn" onclick="this.innerHTML='Заявка принята'">Отправить</button>
+    </form>
+
+
+</div><!--remodal-->
+
+<div class="remodal" data-remodal-id="modal">
+    <button data-remodal-action="close" class="remodal__close"></button>
+    <p class="remodal__header">Осуществить заказ и узнать подробности вы можете отправив свой номер телефона</p>
+
+    <form action="mail.php" method="post">
+        <input name="subject" type="hidden" value="Обратный звонок">
+
+        <div class="flex_wrapper">
+
+          <div class="xs-100 md-50">
+            <p class="remodal__input-desc-text">Ваше имя</p>
+            <input name="name" class="remodal__nameform" type="text">
+            <p class="remodal__input-desc-text">Ваш телефон</p>
+            <input name="phone" class="remodal__phoneform" type="text">
+
+
+          </div>
+          <div class="xs-100 md-50">
+            <p class="remodal__input-desc-text">Коментарии</p>
             <textarea name="message" class="remodal__textarea"></textarea>
 
 
