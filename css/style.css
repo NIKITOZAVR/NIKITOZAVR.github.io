@@ -95,6 +95,9 @@ img {
 .mauto {
 	margin: auto;
 }
+.no-mt {
+	margin-top: 0 !important;
+}
 html, body {
 	background-color: #000000;
 	font-family: "montserratregular", sans-serif;
@@ -492,39 +495,34 @@ html, body {
 	margin: auto;
 	text-decoration: none;
 	font-size: 16px;
+	color: #ffffff;
+	border-radius: 9px;
+	text-align: center;
+	width: 110px;
+	margin-top: 35px;
+	padding: 14px 0;
 }
 .food_cost--office {
 	background-color: #2f7057;
-	border: none;
-	border-radius: 9px;
-	color: #ffffff;
-	text-align: center;
-	margin-top: 35px;
-	padding: 14px 0;
-	width: 110px;
 }
 .food_cost--bussines {
 	background-color: #0a0950;
-	border: none;
-	border-radius: 9px;
-	color: #ffffff;
-	text-align: center;
 	margin-top: 35px;
-	padding: 14px 0;
-	width: 110px;
 }
 .food_cost--bussines-w {
 	margin-top: 63px;
 }
 .food_cost--sport {
 	background-color: #863232;
-	border: none;
-	border-radius: 9px;
-	color: #ffffff;
-	text-align: center;
 	margin-top: 35px;
 	padding: 14px 0;
 	width: 110px;
+}
+.food_cost--bucket {
+	background-color: #7f7f7f;
+  margin-top: 12px;
+  padding: 10px 0;
+  width: 110px;
 }
 
 .about_creator_block {
@@ -792,12 +790,27 @@ textarea {
 	border-radius: 3px;
 	height: 25px;
 	background-color: #3fdfa9;
-	text-align: center;
-	font-size: 34px;
-	line-height: 30px;
-	color: #ffffff;
+	/* line-height: 30px; */
 	float: left;
 	margin: 0 3px 0 3px;
+	position: relative;
+}
+.minus:after, .plus:after {
+	text-align: center;
+	font-size: 34px;
+	color: #ffffff;
+}
+.minus:after {
+	content: "-";
+	position: absolute;
+	top: 0;
+	left: 6px;
+}
+.plus:after {
+	content: "+";
+	position: absolute;
+	top: -2px;
+	left: 3px;
 }
 .minus {
 	line-height: 25px;
@@ -813,6 +826,7 @@ textarea {
 .book_food_text {
 	margin-left: 10px;
 	text-align: left;
+	font-size: 15px;
 }
 .add_food_header {
 	font-size: 25px;
@@ -1060,7 +1074,7 @@ textarea {
 		margin: 30px 0;
 	}
 	.book_pic {
-		max-width: 300px;
+		max-width: 220px;
 	}
 	.book_food_text {
 		margin-bottom: 20px;
