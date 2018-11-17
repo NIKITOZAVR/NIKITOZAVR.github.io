@@ -21,7 +21,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST')
 
 function emailFormSubmission()
 {
-	$to = 'eo.lesaveur@gmail.com';
+	$to = 'ceo.lesaveur@gmail.com';
 	$subject = 'Заявка с сайта: Le saveur';
 
 	$message = '<!DOCTYPE><html><head><meta charset=UTF-8"><title>' . htmlentities($subject,ENT_COMPAT,'UTF-8') . '</title></head>';
@@ -30,7 +30,14 @@ function emailFormSubmission()
 	// $message .= '<tr><td valign="top" style="background-color: #ffffff;"><b>Форма:</b></td><td>' . htmlentities($_REQUEST["subject"],ENT_COMPAT,'UTF-8') . '</td></tr>';
 	$message .= '<div><b>Имя: </b>' . htmlentities($_REQUEST["name"],ENT_COMPAT,'UTF-8').'</div>';
 	$message .= '<div><b>Телефон: </b>' . htmlentities($_REQUEST["phone"],ENT_COMPAT,'UTF-8').'</div>';
-	$message .= '<div><b>Что интересует: </b>' . htmlentities($_REQUEST["message"],ENT_COMPAT,'UTF-8').'</div>';
+
+	$message .= '<div><b>М. Офис: </b>' . htmlentities($_REQUEST["MOffice"],ENT_COMPAT,'UTF-8').'</div>';
+	$message .= '<div><b>М. Бизнес: </b>' . htmlentities($_REQUEST["MBusiness"],ENT_COMPAT,'UTF-8').'</div>';
+	$message .= '<div><b>М. Спорт: </b>' . htmlentities($_REQUEST["MSport"],ENT_COMPAT,'UTF-8').'</div>';
+	$message .= '<div><b>Ж. Офис: </b>' . htmlentities($_REQUEST["WOffice"],ENT_COMPAT,'UTF-8').'</div>';
+	$message .= '<div><b>Ж. Актив: </b>' . htmlentities($_REQUEST["WActive"],ENT_COMPAT,'UTF-8').'</div>';
+	$message .= '<div><b>Ж. Спорт: </b>' . htmlentities($_REQUEST["WSport"],ENT_COMPAT,'UTF-8').'</div>';
+	$message .= '<div><b>На общую сумму от: </b>' . htmlentities($_REQUEST["summ"],ENT_COMPAT,'UTF-8').'</div>';
 
 	// $message .= '<div style="background-color: #eeeeee; font-size: 10px; line-height: 11px;">Форма прислана с сайта: *'. '</div>';
 	// $message .= '<div style="background-color: #eeeeee; font-size: 10px; line-height: 11px;">Visitor IP address: ' . htmlentities($_SERVER["REMOTE_ADDR"],ENT_COMPAT,'UTF-8') . '</div>';

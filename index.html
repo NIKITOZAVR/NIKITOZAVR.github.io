@@ -32,14 +32,6 @@
 
     <h1 class="site_name ttu tac">Le saveur</h1>
 
-    <!-- <div id="menu" class="menu">
-      <ul>
-        <li><a href="#logo">Главная</a></li>
-        <li><a href="#assorti">Услуги</a></li>
-        <li><a href="#about_us">О нас</a></li>
-        <li><a href="#contact">Контакты</a></li>
-      </ul>
-    </div> -->
     <div id="menu" class="menu">
       <ul>
         <li><a href="#logo">Главная</a></li>
@@ -307,9 +299,10 @@
               </div>
               <div class="xs-100 md-50 no-mt">
                 <div class="book_number_block">
-                  <div class="minus"></div>
-                  <div class="plus"></div>
-                  <div class="number">1</div>
+                  <div class="minus" onclick="buttonMinusMOffice(this)"></div>
+                  <div class="plus" onclick="buttonPlusMOffice(this)"></div>
+                  <div  class="number">0</div>
+                   <input type="hidden" name="MOffice">
                 </div>
                 <p class="book_food_text"><b>"Офис" 1800 ккал, 4 блюда (завтрак, ланч, 2 горячих блюда, 2 десерта) </p>
                 <div class="food_cost food_cost--bucket">от 419 грн.</div>
@@ -330,9 +323,10 @@
               </div>
               <div class="xs-100 md-50 no-mt">
                 <div class="book_number_block">
-                  <div class="minus"></div>
-                  <div class="plus"></div>
-                  <div class="number">0</div>
+                  <div class="minus" onclick="buttonMinusMBusiness(this)"></div>
+                  <div class="plus" onclick="buttonPlusMBusiness(this)"></div>
+                  <div  class="number">0</div>
+                   <input type="hidden" name="MBusiness">
                 </div>
                 <p class="book_food_text"><b>"Бизнес" 2100 ккал, 5 блюд (завтрак, ланч, 3 горячих блюда, 2 десерта)</b></p>
                 <div class="food_cost food_cost--bucket">от 449 грн.</div>
@@ -346,9 +340,10 @@
               </div>
               <div class="xs-100 md-50 no-mt">
                 <div class="book_number_block">
-                  <div class="minus"></div>
-                  <div class="plus"></div>
-                  <div class="number">0</div>
+                  <div class="minus" onclick="buttonMinusMSport(this)"></div>
+                  <div class="plus" onclick="buttonPlusMSport(this)"></div>
+                  <div  class="number">0</div>
+                    <input type="hidden" name="MSport">
                 </div>
                 <p class="book_food_text"><b>"Спорт" 2400 ккал, 6 блюд (завтрак, ланч, 4 горячих блюда, 2 десерта)</b></p>
                 <div class="food_cost food_cost--bucket">от 489 грн.</div>
@@ -370,9 +365,10 @@
               </div>
               <div class="xs-100 md-50 no-mt">
                 <div class="book_number_block">
-                  <div class="minus"></div>
-                  <div class="plus"></div>
-                  <div class="number">0</div>
+                  <div class="minus" onclick="buttonMinusWOffice(this)"></div>
+                  <div class="plus" onclick="buttonPlusWOffice(this)"></div>
+                  <div  class="number">0</div>
+                   <input type="hidden" name="WOffice">
                 </div>
                 <p class="book_food_text"><b>"Офис" 1100 ккал, 4 блюда (завтрак, ланч, 2 горячих блюда, 2 десерта)</b></p>
                 <div class="food_cost food_cost--bucket">от 349 грн.</div>
@@ -386,9 +382,10 @@
               </div>
               <div class="xs-100 md-50 no-mt">
                 <div class="book_number_block">
-                  <div class="minus"></div>
-                  <div class="plus"></div>
-                  <div class="number">0</div>
+                  <div class="minus" onclick="buttonMinusWActive(this)"></div>
+                  <div class="plus" onclick="buttonPlusWActive(this)"></div>
+                  <div  class="number">0</div>
+                  <input type="hidden" name="WActive">
                 </div>
                 <p class="book_food_text"><b>"Актив" 1400 ккал, 5 блюд (завтрак, 2 горячих блюда, 2 десерта)</b></p>
                 <div class="food_cost food_cost--bucket">от 389 грн.</div>
@@ -402,9 +399,10 @@
               </div>
               <div class="xs-100 md-50 no-mt">
                 <div class="book_number_block">
-                  <div class="minus"></div>
-                  <div class="plus"></div>
-                  <div class="number">0</div>
+                  <div class="minus" onclick="buttonMinusWSport(this)"></div>
+                  <div class="plus" onclick="buttonPlusWSport(this)"></div>
+                  <div  class="number">0</div>
+                   <input type="hidden" name="WSport">
                 </div>
                 <p class="book_food_text"><b>"Спорт" 1700 ккал, 6 блюд завтрак, ланч, 2 горячих блюда, 2 десердта)</b></p>
                 <div class="food_cost food_cost--bucket">от 419 грн.</div>
@@ -415,7 +413,7 @@
         </div>
 
 
-
+		<p class="add_food_header">Сумма заказа от:</p><p name="summ" class="add_food_header">0</p>
 
         <button class="remodal__btn" onclick="this.innerHTML='Заявка принята'">Отправить</button>
     </form>
@@ -447,9 +445,10 @@
               </div>
               <div class="xs-100 md-50 no-mt">
                 <div class="book_number_block">
-                  <div class="minus"></div>
-                  <div class="plus"></div>
-                  <div class="number">1</div>
+                  <div class="minus" onclick="buttonMinusMBusiness(this)"></div>
+                  <div class="plus" onclick="buttonPlusMBusiness(this)"></div>
+                  <div class="number">0</div>
+                   <input type="hidden" name="MBusiness">
                 </div>
 
                 <p class="book_food_text"><b>"Бизнес" 2100 ккал, 5 блюд (завтрак, ланч, 3 горячих блюда, 2 десерта)</b></p>
@@ -472,9 +471,10 @@
               </div>
               <div class="xs-100 md-50 no-mt">
                 <div class="book_number_block">
-                  <div class="minus"></div>
-                  <div class="plus"></div>
+                  <div class="minus" onclick="buttonMinusMOffice(this)"></div>
+                  <div class="plus" onclick="buttonPlusMOffice(this)"></div>
                   <div class="number">0</div>
+                   <input type="hidden" name="MOffice">
                 </div>
                 <p class="book_food_text"><b>"Офис" 1800 ккал, 4 блюда (завтрак, ланч, 2 горячих блюда, 2 десерта) </b></p>
                 <div class="food_cost food_cost--bucket">от 419 грн.</div>
@@ -482,27 +482,27 @@
               </div>
             </div>
           </div>
-          <div class="xs-100 md-50">
+                <div class="xs-100 md-50">
             <div class="flex_wrapper">
               <div class="xs-100 md-50 no-mt">
                 <img class="book_pic" src="img/pack_sport.jpg" alt="">
               </div>
               <div class="xs-100 md-50 no-mt">
                 <div class="book_number_block">
-                  <div class="minus"></div>
-                  <div class="plus"></div>
+                  <div class="minus" onclick="buttonMinusMSport(this)"></div>
+                  <div class="plus" onclick="buttonPlusMSport(this)"></div>
                   <div class="number">0</div>
+                    <input type="hidden" name="MSport">
                 </div>
                 <p class="book_food_text"><b>"Спорт" 2400 ккал, 6 блюд (завтрак, ланч, 4 горячих блюда, 2 десерта)</b></p>
                 <div class="food_cost food_cost--bucket">от 489 грн.</div>
-
               </div>
             </div>
           </div>
 
         </div>
 
-        <p class="add_food_header">Для женщин</p>
+       <p class="add_food_header">Для женщин</p>
 
         <div class="flex_wrapper">
 
@@ -513,9 +513,10 @@
               </div>
               <div class="xs-100 md-50 no-mt">
                 <div class="book_number_block">
-                  <div class="minus"></div>
-                  <div class="plus"></div>
-                  <div class="number">0</div>
+                  <div class="minus" onclick="buttonMinusWOffice(this)"></div>
+                  <div class="plus" onclick="buttonPlusWOffice(this)"></div>
+                  <div  class="number">0</div>
+                   <input type="hidden" name="WOffice">
                 </div>
                 <p class="book_food_text"><b>"Офис" 1100 ккал, 4 блюда (завтрак, ланч, 2 горячих блюда, 2 десерта)</b></p>
                 <div class="food_cost food_cost--bucket">от 349 грн.</div>
@@ -529,9 +530,10 @@
               </div>
               <div class="xs-100 md-50 no-mt">
                 <div class="book_number_block">
-                  <div class="minus"></div>
-                  <div class="plus"></div>
-                  <div class="number">0</div>
+                  <div class="minus" onclick="buttonMinusWActive(this)"></div>
+                  <div class="plus" onclick="buttonPlusWActive(this)"></div>
+                  <div   class="number">0</div>
+                  <input type="hidden" name="WActive">
                 </div>
                 <p class="book_food_text"><b>"Актив" 1400 ккал, 5 блюд (завтрак, 2 горячих блюда, 2 десерта)</b></p>
                 <div class="food_cost food_cost--bucket">от 389 грн.</div>
@@ -545,9 +547,10 @@
               </div>
               <div class="xs-100 md-50 no-mt">
                 <div class="book_number_block">
-                  <div class="minus"></div>
-                  <div class="plus"></div>
+                  <div class="minus" onclick="buttonMinusWSport(this)"></div>
+                  <div class="plus" onclick="buttonPlusWSport(this)"></div>
                   <div class="number">0</div>
+                   <input type="hidden" name="WSport">
                 </div>
                 <p class="book_food_text"><b>"Спорт" 1700 ккал, 6 блюд завтрак, ланч, 2 горячих блюда, 2 десердта)</b></p>
                 <div class="food_cost food_cost--bucket">от 419 грн.</div>
@@ -558,6 +561,7 @@
         </div>
 
 
+	<p class="add_food_header">Сумма заказа от:</p><p name="summ" class="add_food_header">0</p>
 
 
         <button class="remodal__btn" onclick="this.innerHTML='Заявка принята'">Отправить</button>
@@ -590,9 +594,10 @@
               </div>
               <div class="xs-100 md-50 no-mt">
                 <div class="book_number_block">
-                  <div class="minus"></div>
-                  <div class="plus"></div>
-                  <div class="number">1</div>
+                  <div class="minus" onclick="buttonMinusMSport(this)"></div>
+                  <div class="plus" onclick="buttonPlusMSport(this)"></div>
+                  <div  class="number">0</div>
+                    <input type="hidden" name="MSport">
                 </div>
                 <p class="book_food_text"><b>"Спорт" 2400 ккал, 6 блюд (завтрак, ланч, 4 горячих блюда, 2 десерта)</b></p>
                 <div class="food_cost food_cost--bucket">от 489 грн.</div>
@@ -607,6 +612,7 @@
 
         <div class="flex_wrapper">
 
+
           <div class="xs-100 md-50">
             <div class="flex_wrapper">
               <div class="xs-100 md-50 no-mt">
@@ -614,12 +620,14 @@
               </div>
               <div class="xs-100 md-50 no-mt">
                 <div class="book_number_block">
-                  <div class="minus"></div>
-                  <div class="plus"></div>
-                  <div class="number">0</div>
+                  <div class="minus" onclick="buttonMinusMOffice(this)"></div>
+                  <div class="plus" onclick="buttonPlusMOffice(this)"></div>
+                  <div   class="number">0</div>
+                   <input type="hidden" name="MOffice">
                 </div>
                 <p class="book_food_text"><b>"Офис" 1800 ккал, 4 блюда (завтрак, ланч, 2 горячих блюда, 2 десерта) </b></p>
                 <div class="food_cost food_cost--bucket">от 419 грн.</div>
+
               </div>
             </div>
           </div>
@@ -629,11 +637,12 @@
                 <img class="book_pic" src="img/pack_bisness.jpg" alt="">
 
               </div>
-              <div class="xs-100 md-50 no-mt">
+                  <div class="xs-100 md-50 no-mt">
                 <div class="book_number_block">
-                  <div class="minus"></div>
-                  <div class="plus"></div>
+                  <div class="minus" onclick="buttonMinusMBusiness(this)"></div>
+                  <div class="plus" onclick="buttonPlusMBusiness(this)"></div>
                   <div class="number">0</div>
+                   <input type="hidden" name="MBusiness">
                 </div>
                 <p class="book_food_text"><b>"Бизнес" 2100 ккал, 5 блюд (завтрак, ланч, 3 горячих блюда, 2 десерта)</b></p>
                 <div class="food_cost food_cost--bucket">от 449 грн.</div>
@@ -655,9 +664,10 @@
               </div>
               <div class="xs-100 md-50 no-mt">
                 <div class="book_number_block">
-                  <div class="minus"></div>
-                  <div class="plus"></div>
-                  <div class="number">0</div>
+                  <div class="minus" onclick="buttonMinusWOffice(this)"></div>
+                  <div class="plus" onclick="buttonPlusWOffice(this)"></div>
+                  <div  class="number">0</div>
+                   <input type="hidden" name="WOffice">
                 </div>
                 <p class="book_food_text"><b>"Офис" 1100 ккал, 4 блюда (завтрак, ланч, 2 горячих блюда, 2 десерта)</b></p>
                 <div class="food_cost food_cost--bucket">от 349 грн.</div>
@@ -671,9 +681,10 @@
               </div>
               <div class="xs-100 md-50 no-mt">
                 <div class="book_number_block">
-                  <div class="minus"></div>
-                  <div class="plus"></div>
-                  <div class="number">0</div>
+                  <div class="minus" onclick="buttonMinusWActive(this)"></div>
+                  <div class="plus" onclick="buttonPlusWActive(this)"></div>
+                  <div  class="number">0</div>
+                  <input type="hidden" name="WActive">
                 </div>
                 <p class="book_food_text"><b>"Актив" 1400 ккал, 5 блюд (завтрак, 2 горячих блюда, 2 десерта)</b></p>
                 <div class="food_cost food_cost--bucket">от 389 грн.</div>
@@ -687,9 +698,10 @@
               </div>
               <div class="xs-100 md-50 no-mt">
                 <div class="book_number_block">
-                  <div class="minus"></div>
-                  <div class="plus"></div>
-                  <div class="number">0</div>
+                  <div class="minus" onclick="buttonMinusWSport(this)"></div>
+                  <div class="plus" onclick="buttonPlusWSport(this)"></div>
+                  <div  class="number">0</div>
+                   <input type="hidden" name="WSport">
                 </div>
                 <p class="book_food_text"><b>"Спорт" 1700 ккал, 6 блюд завтрак, ланч, 2 горячих блюда, 2 десердта)</b></p>
                 <div class="food_cost food_cost--bucket">от 419 грн.</div>
@@ -700,6 +712,7 @@
         </div>
 
 
+	<p class="add_food_header">Сумма заказа от:</p><p  name="summ" class="add_food_header">0</p>
 
 
         <button class="remodal__btn" onclick="this.innerHTML='Заявка принята'">Отправить</button>
@@ -731,10 +744,11 @@
             <img class="book_pic" src="img/pack_woman_office.jpg" alt="">
           </div>
           <div class="xs-100 md-50 no-mt">
-            <div class="book_number_block">
-              <div class="minus"></div>
-              <div class="plus"></div>
-              <div class="number">1</div>
+               <div class="book_number_block">
+              <div class="minus" onclick="buttonMinusWOffice(this)"></div>
+              <div class="plus" onclick="buttonPlusWOffice(this)"></div>
+              <div  class="number">0</div>
+               <input type="hidden" name="WOffice">
             </div>
             <p class="book_food_text"><b>"Офис" 1100 ккал, 4 блюда (завтрак, ланч, 2 горячих блюда, 2 десерта)</b></p>
             <div class="food_cost food_cost--bucket">от 349 грн.</div>
@@ -755,10 +769,11 @@
             <img class="book_pic" src="img/pack_woman_active.jpg" alt="">
           </div>
           <div class="xs-100 md-50 no-mt">
-            <div class="book_number_block">
-              <div class="minus"></div>
-              <div class="plus"></div>
-              <div class="number">0</div>
+                 <div class="book_number_block">
+              <div class="minus" onclick="buttonMinusWActive(this)"></div>
+              <div class="plus" onclick="buttonPlusWActive(this)"></div>
+              <div  class="number">0</div>
+              <input type="hidden" name="WActive">
             </div>
             <p class="book_food_text"><b>"Актив" 1400 ккал, 5 блюд (завтрак, 2 горячих блюда, 2 десерта)</b></p>
             <div class="food_cost food_cost--bucket">от 389 грн.</div>
@@ -771,14 +786,16 @@
             <img class="book_pic" src="img/pack_woman_sport.jpg" alt="">
 
           </div>
-          <div class="xs-100 md-50 no-mt">
+           <div class="xs-100 md-50 no-mt">
             <div class="book_number_block">
-              <div class="minus"></div>
-              <div class="plus"></div>
-              <div class="number">0</div>
+              <div class="minus" onclick="buttonMinusWSport(this)"></div>
+              <div class="plus" onclick="buttonPlusWSport(this)"></div>
+              <div  class="number">0</div>
+               <input type="hidden" name="WSport">
             </div>
             <p class="book_food_text"><b>"Спорт" 1700 ккал, 6 блюд завтрак, ланч, 2 горячих блюда, 2 десердта)</b></p>
             <div class="food_cost food_cost--bucket">от 419 грн.</div>
+
           </div>
         </div>
       </div>
@@ -795,15 +812,17 @@
           <div class="xs-100 md-50 no-mt">
             <img class="book_pic" src="img/pack_office.jpg" alt="">
           </div>
-          <div class="xs-100 md-50 no-mt">
-            <div class="book_number_block">
-              <div class="minus"></div>
-              <div class="plus"></div>
-              <div class="number">0</div>
-            </div>
-            <p class="book_food_text"><b>"Офис" 1800 ккал, 4 блюда (завтрак, ланч, 2 горячих блюда, 2 десерта) </b></p>
-            <div class="food_cost food_cost--bucket">от 419 грн.</div>
-          </div>
+           <div class="xs-100 md-50 no-mt">
+                <div class="book_number_block">
+                  <div class="minus" onclick="buttonMinusMOffice(this)"></div>
+                  <div class="plus" onclick="buttonPlusMOffice(this)"></div>
+                  <div  class="number">0</div>
+                   <input type="hidden" name="MOffice">
+                </div>
+                <p class="book_food_text"><b>"Офис" 1800 ккал, 4 блюда (завтрак, ланч, 2 горячих блюда, 2 десерта) </b></p>
+                <div class="food_cost food_cost--bucket">от 419 грн.</div>
+
+              </div>
         </div>
       </div>
 
@@ -812,15 +831,16 @@
           <div class="xs-100 md-50 no-mt">
             <img class="book_pic" src="img/pack_bisness.jpg" alt="">
           </div>
-          <div class="xs-100 md-50 no-mt">
-            <div class="book_number_block">
-              <div class="minus"></div>
-              <div class="plus"></div>
-              <div class="number">0</div>
-            </div>
-            <p class="book_food_text"><b>"Бизнес" 2100 ккал, 5 блюд (завтрак, ланч, 3 горячих блюда, 2 десерта)</b></p>
-            <div class="food_cost food_cost--bucket">от 449 грн.</div>
-          </div>
+      <div class="xs-100 md-50 no-mt">
+                <div class="book_number_block">
+                  <div class="minus" onclick="buttonMinusMBusiness(this)"></div>
+                  <div class="plus" onclick="buttonPlusMBusiness(this)"></div>
+                  <div  class="number">0</div>
+                   <input type="hidden" name="MBusiness">
+                </div>
+                <p class="book_food_text"><b>"Бизнес" 2100 ккал, 5 блюд (завтрак, ланч, 3 горячих блюда, 2 десерта)</b></p>
+                <div class="food_cost food_cost--bucket">от 449 грн.</div>
+              </div>
         </div>
       </div>
       <div class="xs-100 md-50">
@@ -828,22 +848,23 @@
           <div class="xs-100 md-50 no-mt">
             <img class="book_pic" src="img/pack_sport.jpg" alt="">
           </div>
-          <div class="xs-100 md-50 no-mt">
-            <div class="book_number_block">
-              <div class="minus"></div>
-              <div class="plus"></div>
-              <div class="number">0</div>
-            </div>
-            <p class="book_food_text"><b>"Спорт" 2400 ккал, 6 блюд (завтрак, ланч, 4 горячих блюда, 2 десерта)</b></p>
-            <div class="food_cost food_cost--bucket">от 489 грн.</div>
-          </div>
+         <div class="xs-100 md-50 no-mt">
+                <div class="book_number_block">
+                  <div class="minus" onclick="buttonMinusMSport(this)"></div>
+                  <div class="plus" onclick="buttonPlusMSport(this)"></div>
+                  <div  class="number">0</div>
+                    <input type="hidden" name="MSport">
+                </div>
+                <p class="book_food_text"><b>"Спорт" 2400 ккал, 6 блюд (завтрак, ланч, 4 горячих блюда, 2 десерта)</b></p>
+                <div class="food_cost food_cost--bucket">от 489 грн.</div>
+              </div>
         </div>
       </div>
 
     </div>
 
 
-
+	<p class="add_food_header">Сумма заказа от:</p><p name="summ" class="add_food_header">0</p>
 
     <button class="remodal__btn" onclick="this.innerHTML='Заявка принята'">Отправить</button>
   </form>
@@ -876,9 +897,10 @@
           </div>
           <div class="xs-100 md-50 no-mt">
             <div class="book_number_block">
-              <div class="minus"></div>
-              <div class="plus"></div>
-              <div class="number">1</div>
+              <div class="minus" onclick="buttonMinusWActive(this)"></div>
+              <div class="plus" onclick="buttonPlusWActive(this)"></div>
+              <div  class="number">0</div>
+              <input type="hidden" name="WActive">
             </div>
             <p class="book_food_text"><b>"Актив" 1400 ккал, 5 блюд (завтрак, 2 горячих блюда, 2 десерта)</b></p>
             <div class="food_cost food_cost--bucket">от 389 грн.</div>
@@ -899,15 +921,15 @@
           <div class="xs-100 md-50 no-mt">
             <img class="book_pic" src="img/pack_woman_office.jpg" alt="">
           </div>
-          <div class="xs-100 md-50 no-mt">
+                <div class="xs-100 md-50 no-mt">
             <div class="book_number_block">
-              <div class="minus"></div>
-              <div class="plus"></div>
-              <div class="number">0</div>
+              <div class="minus" onclick="buttonMinusWOffice(this)"></div>
+              <div class="plus" onclick="buttonPlusWOffice(this)"></div>
+              <div  class="number">0</div>
+               <input type="hidden" name="WOffice">
             </div>
             <p class="book_food_text"><b>"Офис" 1100 ккал, 4 блюда (завтрак, ланч, 2 горячих блюда, 2 десерта)</b></p>
             <div class="food_cost food_cost--bucket">от 349 грн.</div>
-
           </div>
         </div>
       </div>
@@ -919,9 +941,10 @@
           </div>
           <div class="xs-100 md-50 no-mt">
             <div class="book_number_block">
-              <div class="minus"></div>
-              <div class="plus"></div>
-              <div class="number">0</div>
+              <div class="minus" onclick="buttonMinusWSport(this)"></div>
+              <div class="plus" onclick="buttonPlusWSport(this)"></div>
+              <div  class="number">0</div>
+               <input type="hidden" name="WSport">
             </div>
             <p class="book_food_text"><b>"Спорт" 1700 ккал, 6 блюд завтрак, ланч, 2 горячих блюда, 2 десердта)</b></p>
             <div class="food_cost food_cost--bucket">от 419 грн.</div>
@@ -942,15 +965,17 @@
           <div class="xs-100 md-50 no-mt">
             <img class="book_pic" src="img/pack_office.jpg" alt="">
           </div>
-          <div class="xs-100 md-50 no-mt">
-            <div class="book_number_block">
-              <div class="minus"></div>
-              <div class="plus"></div>
-              <div class="number">0</div>
-            </div>
-            <p class="book_food_text"><b>"Офис" 1800 ккал, 4 блюда (завтрак, ланч, 2 горячих блюда, 2 десерта) </b></p>
-            <div class="food_cost food_cost--bucket">от 419 грн.</div>
-          </div>
+           <div class="xs-100 md-50 no-mt">
+                <div class="book_number_block">
+                  <div class="minus" onclick="buttonMinusMOffice(this)"></div>
+                  <div class="plus" onclick="buttonPlusMOffice(this)"></div>
+                  <div  class="number">0</div>
+                   <input type="hidden" name="MOffice">
+                </div>
+                <p class="book_food_text"><b>"Офис" 1800 ккал, 4 блюда (завтрак, ланч, 2 горячих блюда, 2 десерта) </b></p>
+                <div class="food_cost food_cost--bucket">от 419 грн.</div>
+
+              </div>
         </div>
       </div>
 
@@ -959,15 +984,16 @@
           <div class="xs-100 md-50 no-mt">
             <img class="book_pic" src="img/pack_bisness.jpg" alt="">
           </div>
-          <div class="xs-100 md-50 no-mt">
-            <div class="book_number_block">
-              <div class="minus"></div>
-              <div class="plus"></div>
-              <div class="number">0</div>
-            </div>
-            <p class="book_food_text"><b>"Бизнес" 2100 ккал, 5 блюд (завтрак, ланч, 3 горячих блюда, 2 десерта)</b></p>
-            <div class="food_cost food_cost--bucket">от 449 грн.</div>
-          </div>
+      <div class="xs-100 md-50 no-mt">
+                <div class="book_number_block">
+                  <div class="minus" onclick="buttonMinusMBusiness(this)"></div>
+                  <div class="plus" onclick="buttonPlusMBusiness(this)"></div>
+                  <div  class="number">0</div>
+                   <input type="hidden" name="MBusiness">
+                </div>
+                <p class="book_food_text"><b>"Бизнес" 2100 ккал, 5 блюд (завтрак, ланч, 3 горячих блюда, 2 десерта)</b></p>
+                <div class="food_cost food_cost--bucket">от 449 грн.</div>
+              </div>
         </div>
       </div>
       <div class="xs-100 md-50">
@@ -975,15 +1001,16 @@
           <div class="xs-100 md-50 no-mt">
             <img class="book_pic" src="img/pack_sport.jpg" alt="">
           </div>
-          <div class="xs-100 md-50 no-mt">
-            <div class="book_number_block">
-              <div class="minus"></div>
-              <div class="plus"></div>
-              <div class="number">0</div>
-            </div>
-            <p class="book_food_text"><b>"Спорт" 2400 ккал, 6 блюд (завтрак, ланч, 4 горячих блюда, 2 десерта)</b></p>
-            <div class="food_cost food_cost--bucket">от 489 грн.</div>
-          </div>
+         <div class="xs-100 md-50 no-mt">
+                <div class="book_number_block">
+                  <div class="minus" onclick="buttonMinusMSport(this)"></div>
+                  <div class="plus" onclick="buttonPlusMSport(this)"></div>
+                  <div   class="number">0</div>
+                    <input type="hidden" name="MSport">
+                </div>
+                <p class="book_food_text"><b>"Спорт" 2400 ккал, 6 блюд (завтрак, ланч, 4 горячих блюда, 2 десерта)</b></p>
+                <div class="food_cost food_cost--bucket">от 489 грн.</div>
+              </div>
         </div>
       </div>
 
@@ -991,7 +1018,7 @@
 
 
 
-
+	<p class="add_food_header">Сумма заказа от:</p><p  name="summ" class="add_food_header">0</p>
     <button class="remodal__btn" onclick="this.innerHTML='Заявка принята'">Отправить</button>
   </form>
 
@@ -1023,9 +1050,10 @@
           </div>
           <div class="xs-100 md-50 no-mt">
             <div class="book_number_block">
-              <div class="minus"></div>
-              <div class="plus"></div>
-              <div class="number">1</div>
+              <div class="minus" onclick="buttonMinusWSport(this)"></div>
+              <div class="plus" onclick="buttonPlusWSport(this)"></div>
+              <div  class="number">0</div>
+               <input type="hidden" name="WSport">
             </div>
             <p class="book_food_text"><b>"Спорт" 1700 ккал, 6 блюд завтрак, ланч, 2 горячих блюда, 2 десердта)</b></p>
             <div class="food_cost food_cost--bucket">от 419 грн.</div>
@@ -1048,9 +1076,10 @@
           </div>
           <div class="xs-100 md-50 no-mt">
             <div class="book_number_block">
-              <div class="minus"></div>
-              <div class="plus"></div>
-              <div class="number">0</div>
+              <div class="minus" onclick="buttonMinusWOffice(this)"></div>
+              <div class="plus" onclick="buttonPlusWOffice(this)"></div>
+              <div  class="number">0</div>
+               <input type="hidden" name="WOffice">
             </div>
             <p class="book_food_text"><b>"Офис" 1100 ккал, 4 блюда (завтрак, ланч, 2 горячих блюда, 2 десерта)</b></p>
             <div class="food_cost food_cost--bucket">от 349 грн.</div>
@@ -1064,9 +1093,10 @@
           </div>
           <div class="xs-100 md-50 no-mt">
             <div class="book_number_block">
-              <div class="minus"></div>
-              <div class="plus"></div>
-              <div class="number">0</div>
+              <div class="minus" onclick="buttonMinusWActive(this)"></div>
+              <div class="plus" onclick="buttonPlusWActive(this)"></div>
+              <div  class="number">0</div>
+              <input type="hidden" name="WActive">
             </div>
             <p class="book_food_text"><b>"Актив" 1400 ккал, 5 блюд (завтрак, 2 горячих блюда, 2 десерта)</b></p>
             <div class="food_cost food_cost--bucket">от 389 грн.</div>
@@ -1076,7 +1106,7 @@
 
     </div>
 
-    <p class="add_food_header">Для мужчин</p>
+ <p class="add_food_header">Для мужчин</p>
 
     <div class="flex_wrapper">
 
@@ -1085,15 +1115,17 @@
           <div class="xs-100 md-50 no-mt">
             <img class="book_pic" src="img/pack_office.jpg" alt="">
           </div>
-          <div class="xs-100 md-50 no-mt">
-            <div class="book_number_block">
-              <div class="minus"></div>
-              <div class="plus"></div>
-              <div class="number">0</div>
-            </div>
-            <p class="book_food_text"><b>"Офис" 1800 ккал, 4 блюда (завтрак, ланч, 2 горячих блюда, 2 десерта) </b></p>
-            <div class="food_cost food_cost--bucket">от 419 грн.</div>
-          </div>
+           <div class="xs-100 md-50 no-mt">
+                <div class="book_number_block">
+                  <div class="minus" onclick="buttonMinusMOffice(this)"></div>
+                  <div class="plus" onclick="buttonPlusMOffice(this)"></div>
+                  <div  class="number">0</div>
+                   <input type="hidden" name="MOffice">
+                </div>
+                <p class="book_food_text"><b>"Офис" 1800 ккал, 4 блюда (завтрак, ланч, 2 горячих блюда, 2 десерта) </b></p>
+                <div class="food_cost food_cost--bucket">от 419 грн.</div>
+
+              </div>
         </div>
       </div>
 
@@ -1102,15 +1134,16 @@
           <div class="xs-100 md-50 no-mt">
             <img class="book_pic" src="img/pack_bisness.jpg" alt="">
           </div>
-          <div class="xs-100 md-50 no-mt">
-            <div class="book_number_block">
-              <div class="minus"></div>
-              <div class="plus"></div>
-              <div class="number">0</div>
-            </div>
-            <p class="book_food_text"><b>"Бизнес" 2100 ккал, 5 блюд (завтрак, ланч, 3 горячих блюда, 2 десерта)</b></p>
-            <div class="food_cost food_cost--bucket">от 449 грн.</div>
-          </div>
+      <div class="xs-100 md-50 no-mt">
+                <div class="book_number_block">
+                  <div class="minus" onclick="buttonMinusMBusiness(this)"></div>
+                  <div class="plus" onclick="buttonPlusMBusiness(this)"></div>
+                  <div class="number">0</div>
+                   <input type="hidden" name="MBusiness">
+                </div>
+                <p class="book_food_text"><b>"Бизнес" 2100 ккал, 5 блюд (завтрак, ланч, 3 горячих блюда, 2 десерта)</b></p>
+                <div class="food_cost food_cost--bucket">от 449 грн.</div>
+              </div>
         </div>
       </div>
       <div class="xs-100 md-50">
@@ -1118,21 +1151,22 @@
           <div class="xs-100 md-50 no-mt">
             <img class="book_pic" src="img/pack_sport.jpg" alt="">
           </div>
-          <div class="xs-100 md-50 no-mt">
-            <div class="book_number_block">
-              <div class="minus"></div>
-              <div class="plus"></div>
-              <div class="number">0</div>
-            </div>
-            <p class="book_food_text"><b>"Спорт" 2400 ккал, 6 блюд (завтрак, ланч, 4 горячих блюда, 2 десерта)</b></p>
-            <div class="food_cost food_cost--bucket">от 489 грн.</div>
-          </div>
+         <div class="xs-100 md-50 no-mt">
+                <div class="book_number_block">
+                  <div class="minus" onclick="buttonMinusMSport(this)"></div>
+                  <div class="plus" onclick="buttonPlusMSport(this)"></div>
+                  <div   class="number">0</div>
+                    <input type="hidden" name="MSport">
+                </div>
+                <p class="book_food_text"><b>"Спорт" 2400 ккал, 6 блюд (завтрак, ланч, 4 горячих блюда, 2 десерта)</b></p>
+                <div class="food_cost food_cost--bucket">от 489 грн.</div>
+              </div>
         </div>
       </div>
 
     </div>
 
-
+	<p class="add_food_header">Сумма заказа от:</p><p name="summ" class="add_food_header">0</p>
     <button class="remodal__btn" onclick="this.innerHTML='Заявка принята'">Отправить</button>
   </form>
 
@@ -1146,23 +1180,143 @@
     <form action="mail.php" method="post">
         <input name="subject" type="hidden" value="Обратный звонок">
 
+
+
+          <div class="flex_wrapper">
+            <div class="xs-100 md-50">
+              <p class="remodal__input-desc-text">Ваше имя</p>
+              <input name="name" class="remodal__nameform" type="text">
+
+            </div>
+            <div class="xs-100 md-50">
+              <p class="remodal__input-desc-text">Ваш телефон</p>
+              <input name="phone" class="remodal__phoneform" type="text">
+
+            </div>
+          </div>
+
+
+
+     <p class="add_food_header">Для женщин</p>
+
         <div class="flex_wrapper">
 
           <div class="xs-100 md-50">
-            <p class="remodal__input-desc-text">Ваше имя</p>
-            <input name="name" class="remodal__nameform" type="text">
-            <p class="remodal__input-desc-text">Ваш телефон</p>
-            <input name="phone" class="remodal__phoneform" type="text">
-
-
+            <div class="flex_wrapper">
+              <div class="xs-100 md-50 no-mt">
+                <img class="book_pic" src="img/pack_woman_office.jpg" alt="">
+              </div>
+              <div class="xs-100 md-50 no-mt">
+                <div class="book_number_block">
+                  <div class="minus" onclick="buttonMinusWOffice(this)"></div>
+                  <div class="plus" onclick="buttonPlusWOffice(this)"></div>
+                  <div class="number">0</div>
+                  <input type="hidden" name="WOffice">
+                </div>
+                <p class="book_food_text"><b>"Офис" 1100 ккал, 4 блюда (завтрак, ланч, 2 горячих блюда, 2 десерта)</b></p>
+                <div class="food_cost food_cost--bucket">от 349 грн.</div>
+              </div>
+            </div>
           </div>
           <div class="xs-100 md-50">
-            <p class="remodal__input-desc-text">Коментарии</p>
-            <textarea name="message" class="remodal__textarea"></textarea>
-
-
+            <div class="flex_wrapper">
+              <div class="xs-100 md-50 no-mt">
+                <img class="book_pic" src="img/pack_woman_active.jpg" alt="">
+              </div>
+              <div class="xs-100 md-50 no-mt">
+                <div class="book_number_block">
+                  <div class="minus" onclick="buttonMinusWActive(this)"></div>
+                  <div class="plus" onclick="buttonPlusWActive(this)"></div>
+                  <div class="number">0</div>
+                   <input type="hidden" name="WActive">
+                </div>
+                <p class="book_food_text"><b>"Актив" 1400 ккал, 5 блюд (завтрак, 2 горячих блюда, 2 десерта)</b></p>
+                <div class="food_cost food_cost--bucket">от 389 грн.</div>
+              </div>
+            </div>
           </div>
+          <div class="xs-100 md-50">
+            <div class="flex_wrapper">
+              <div class="xs-100 md-50 no-mt">
+                <img class="book_pic" src="img/pack_woman_sport.jpg" alt="">
+              </div>
+              <div class="xs-100 md-50 no-mt">
+                <div class="book_number_block">
+                  <div class="minus" onclick="buttonMinusWSport(this)"></div>
+                  <div class="plus" onclick="buttonPlusWSport(this)"></div>
+                  <div class="number">0</div>
+                   <input type="hidden" name="WSport">
+                </div>
+                <p class="book_food_text"><b>"Спорт" 1700 ккал, 6 блюд завтрак, ланч, 2 горячих блюда, 2 десердта)</b></p>
+                <div class="food_cost food_cost--bucket">от 419 грн.</div>
+              </div>
+            </div>
+          </div>
+
         </div>
+
+
+  <p class="add_food_header">Для мужчин</p>
+
+    <div class="flex_wrapper">
+
+      <div class="xs-100 md-50">
+        <div class="flex_wrapper">
+          <div class="xs-100 md-50 no-mt">
+            <img class="book_pic" src="img/pack_office.jpg" alt="">
+          </div>
+           <div class="xs-100 md-50 no-mt">
+                <div class="book_number_block">
+                  <div class="minus" onclick="buttonMinusMOffice(this)"></div>
+                  <div class="plus" onclick="buttonPlusMOffice(this)"></div>
+                  <div class="number">0</div>
+                   <input type="hidden" name="MOffice">
+                </div>
+                <p class="book_food_text"><b>"Офис" 1800 ккал, 4 блюда (завтрак, ланч, 2 горячих блюда, 2 десерта) </b></p>
+                <div class="food_cost food_cost--bucket">от 419 грн.</div>
+
+              </div>
+        </div>
+      </div>
+
+      <div class="xs-100 md-50">
+        <div class="flex_wrapper">
+          <div class="xs-100 md-50 no-mt">
+            <img class="book_pic" src="img/pack_bisness.jpg" alt="">
+          </div>
+      <div class="xs-100 md-50 no-mt">
+                <div class="book_number_block">
+                  <div class="minus" onclick="buttonMinusMBusiness(this)"></div>
+                  <div class="plus" onclick="buttonPlusMBusiness(this)"></div>
+                  <div class="number">0</div>
+                   <input type="hidden" name="MBusiness">
+                </div>
+                <p class="book_food_text"><b>"Бизнес" 2100 ккал, 5 блюд (завтрак, ланч, 3 горячих блюда, 2 десерта)</b></p>
+                <div class="food_cost food_cost--bucket">от 449 грн.</div>
+              </div>
+        </div>
+      </div>
+      <div class="xs-100 md-50">
+        <div class="flex_wrapper">
+          <div class="xs-100 md-50 no-mt">
+            <img class="book_pic" src="img/pack_sport.jpg" alt="">
+          </div>
+         <div class="xs-100 md-50 no-mt">
+                <div class="book_number_block">
+                  <div class="minus" onclick="buttonMinusMSport(this)"></div>
+                  <div class="plus" onclick="buttonPlusMSport(this)"></div>
+                  <div  class="number">0</div>
+                   <input type="hidden" name="MSport">
+                </div>
+                <p class="book_food_text"><b>"Спорт" 2400 ккал, 6 блюд (завтрак, ланч, 4 горячих блюда, 2 десерта)</b></p>
+                <div class="food_cost food_cost--bucket">от 489 грн.</div>
+              </div>
+        </div>
+      </div>
+
+    </div>
+    <p class="add_food_header">Сумма заказа от:</p><p name="summ"class="add_food_header">0</p>
+
 
         <button class="remodal__btn" onclick="this.innerHTML='Заявка принята'">Отправить</button>
     </form>
@@ -1170,7 +1324,7 @@
 
 </div><!--remodal-->
 <script src="js/remodal.min.js"></script>
-
+<script src="js/scriptForBasket.js"></script>
 
 </body>
 </html>

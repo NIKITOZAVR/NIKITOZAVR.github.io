@@ -1042,7 +1042,7 @@ textarea {
 		max-width: 220px;
 	}
 	.remodal-wrapper .flex_wrapper > div {
-		margin: 0;
+		margin: 10px 0;
 	}
 	.flex_wrapper--advantages_block > div {
 		margin: 0;
