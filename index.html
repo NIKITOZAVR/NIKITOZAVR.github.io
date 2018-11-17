@@ -88,19 +88,19 @@
           <img class="food_pack_img" src="img/pack_office.jpg" alt="">
           <p class="food_type_name food_type_name--office">Офис</p>
           <p class="food_description"><b>1800 ккал, 4 блюда</b> (завтрак, ланч, 2 горячих блюда, 2 десерта)</p>
-          <a href="#modal-m-office" class="food_cost food_cost--office" onmouseover="changeText(this,'Заказать')" onmouseout="changeText(this,'от 419 грн.')">от 419 грн.</a>
+          <a href="#modal-m-office" class="food_cost food_cost--office" onclick="buttonMOfficeOrder(this)" onmouseover="changeText(this,'Заказать')" onmouseout="changeText(this,'от 419 грн.')">от 419 грн.</a>
         </div>
         <div class="xs-100 md-3-in-row">
           <img class="food_pack_img" src="img/pack_bisness.jpg" alt="">
           <p class="food_type_name food_type_name--bussines">Бизнес</p>
           <p class="food_description"><b>2100 ккал, 5 блюд</b> (завтрак, ланч, 3 горячих блюда, 2 десерта)</p>
-          <a href="#modal-m-bussines" class="food_cost food_cost--bussines" onmouseover="changeText(this,'Заказать')" onmouseout="changeText(this,'от 449 грн.')">от 449 грн.</a>
+          <a href="#modal-m-bussines" class="food_cost food_cost--bussines" onclick="buttonMBusinessOrder(this)" onmouseover="changeText(this,'Заказать')" onmouseout="changeText(this,'от 449 грн.')">от 449 грн.</a>
         </div>
         <div class="xs-100 md-3-in-row">
           <img class="food_pack_img" src="img/pack_sport.jpg" alt="">
           <p class="food_type_name food_type_name--sport">Спорт</p>
             <p class="food_description" ><b>2400 ккал, 6 блюд</b> (завтрак, ланч, 4 горячих блюда, 2 десерта)</p>
-          <a href="#modal-m-sport" class="food_cost food_cost--sport" onmouseover="changeText(this,'Заказать')" onmouseout="changeText(this,'от 449 грн.')">от 489 грн.</a>
+          <a href="#modal-m-sport" class="food_cost food_cost--sport" onclick="buttonMSportOrder(this)" onmouseover="changeText(this,'Заказать')" onmouseout="changeText(this,'от 489 грн.')">от 489 грн.</a>
         </div>
       </div>
 
@@ -114,19 +114,19 @@
           <img class="food_pack_img" src="img/pack_woman_office.jpg" alt="">
           <p class="food_type_name food_type_name--office">Офис</p>
           <p class="food_description"><b>1100 ккал, 4 блюда</b> (завтрак, ланч, 2 горячих блюда, 2 десерта)</p>
-          <a href="#modal-w-office" class="food_cost food_cost--office" onmouseover="changeText(this,'Заказать')" onmouseout="changeText(this,'от 419 грн.')">от 349 грн.</a>
+          <a href="#modal-w-office" class="food_cost food_cost--office" onclick="buttonWOfficeOrder(this)" onmouseover="changeText(this,'Заказать')" onmouseout="changeText(this,'от 349 грн.')">от 349 грн.</a>
         </div>
         <div class="xs-100 md-3-in-row">
           <img class="food_pack_img" src="img/pack_woman_active.jpg" alt="">
           <p class="food_type_name food_type_name--bussines">Актив</p>
           <p class="food_description" ><b>1400 ккал, 5 блюд</b> (завтрак, 2 горячих блюда, 2 десерта)</p>
-          <a href="#modal-w-active" class="food_cost food_cost--bussines food_cost--bussines-w" onmouseover="changeText(this,'Заказать')" onmouseout="changeText(this,'от 449 грн.')">от 389 грн.</a>
+          <a href="#modal-w-active" class="food_cost food_cost--bussines food_cost--bussines-w" onclick="buttonWActiveOrder(this)" onmouseover="changeText(this,'Заказать')" onmouseout="changeText(this,'от 389 грн.')">от 389 грн.</a>
         </div>
         <div class="xs-100 md-3-in-row">
           <img class="food_pack_img" src="img/pack_woman_sport.jpg" alt="">
           <p class="food_type_name food_type_name--sport">Спорт</p>
             <p class="food_description" ><b>1700 ккал, 6 блюд</b> завтрак, ланч, 2 горячих блюда, 2 десерта)</p>
-          <a href="#modal-w-sport" class="food_cost food_cost--sport" onmouseover="changeText(this,'Заказать')" onmouseout="changeText(this,'от 449 грн.')">от 419 грн.</a>
+          <a href="#modal-w-sport" class="food_cost food_cost--sport" onclick="buttonWSportOrder(this)" onmouseover="changeText(this,'Заказать')" onmouseout="changeText(this,'от 419 грн.')">от 419 грн.</a>
         </div>
       </div>
 
@@ -301,7 +301,7 @@
                 <div class="book_number_block">
                   <div class="minus" onclick="buttonMinusMOffice(this)"></div>
                   <div class="plus" onclick="buttonPlusMOffice(this)"></div>
-                  <div  class="number">0</div>
+                  <div  class="number">1</div>
                    <input type="hidden" name="MOffice">
                 </div>
                 <p class="book_food_text"><b>"Офис" 1800 ккал, 4 блюда (завтрак, ланч, 2 горячих блюда, 2 десерта) </p>
@@ -413,7 +413,7 @@
         </div>
 
 
-		<p class="add_food_header">Сумма заказа от:</p><p name="summ" class="add_food_header">0</p>
+		<p class="add_food_header">Сумма заказа от:</p><p name="summ" class="add_food_header">419 грн.</p>
 
         <button class="remodal__btn" onclick="this.innerHTML='Заявка принята'">Отправить</button>
     </form>
@@ -447,7 +447,7 @@
                 <div class="book_number_block">
                   <div class="minus" onclick="buttonMinusMBusiness(this)"></div>
                   <div class="plus" onclick="buttonPlusMBusiness(this)"></div>
-                  <div class="number">0</div>
+                  <div class="number">1</div>
                    <input type="hidden" name="MBusiness">
                 </div>
 
@@ -561,7 +561,7 @@
         </div>
 
 
-	<p class="add_food_header">Сумма заказа от:</p><p name="summ" class="add_food_header">0</p>
+	<p class="add_food_header">Сумма заказа от:</p><p name="summ" class="add_food_header">449 грн.</p>
 
 
         <button class="remodal__btn" onclick="this.innerHTML='Заявка принята'">Отправить</button>
@@ -596,7 +596,7 @@
                 <div class="book_number_block">
                   <div class="minus" onclick="buttonMinusMSport(this)"></div>
                   <div class="plus" onclick="buttonPlusMSport(this)"></div>
-                  <div  class="number">0</div>
+                  <div  class="number">1</div>
                     <input type="hidden" name="MSport">
                 </div>
                 <p class="book_food_text"><b>"Спорт" 2400 ккал, 6 блюд (завтрак, ланч, 4 горячих блюда, 2 десерта)</b></p>
@@ -712,7 +712,7 @@
         </div>
 
 
-	<p class="add_food_header">Сумма заказа от:</p><p  name="summ" class="add_food_header">0</p>
+	<p class="add_food_header">Сумма заказа от:</p><p  name="summ" class="add_food_header">489 грн.</p>
 
 
         <button class="remodal__btn" onclick="this.innerHTML='Заявка принята'">Отправить</button>
@@ -747,7 +747,7 @@
                <div class="book_number_block">
               <div class="minus" onclick="buttonMinusWOffice(this)"></div>
               <div class="plus" onclick="buttonPlusWOffice(this)"></div>
-              <div  class="number">0</div>
+              <div  class="number">1</div>
                <input type="hidden" name="WOffice">
             </div>
             <p class="book_food_text"><b>"Офис" 1100 ккал, 4 блюда (завтрак, ланч, 2 горячих блюда, 2 десерта)</b></p>
@@ -864,7 +864,7 @@
     </div>
 
 
-	<p class="add_food_header">Сумма заказа от:</p><p name="summ" class="add_food_header">0</p>
+	<p class="add_food_header">Сумма заказа от:</p><p name="summ" class="add_food_header">349 грн.</p>
 
     <button class="remodal__btn" onclick="this.innerHTML='Заявка принята'">Отправить</button>
   </form>
@@ -899,7 +899,7 @@
             <div class="book_number_block">
               <div class="minus" onclick="buttonMinusWActive(this)"></div>
               <div class="plus" onclick="buttonPlusWActive(this)"></div>
-              <div  class="number">0</div>
+              <div  class="number">1</div>
               <input type="hidden" name="WActive">
             </div>
             <p class="book_food_text"><b>"Актив" 1400 ккал, 5 блюд (завтрак, 2 горячих блюда, 2 десерта)</b></p>
@@ -1018,7 +1018,7 @@
 
 
 
-	<p class="add_food_header">Сумма заказа от:</p><p  name="summ" class="add_food_header">0</p>
+	<p class="add_food_header">Сумма заказа от:</p><p  name="summ" class="add_food_header">389 грн.</p>
     <button class="remodal__btn" onclick="this.innerHTML='Заявка принята'">Отправить</button>
   </form>
 
@@ -1052,7 +1052,7 @@
             <div class="book_number_block">
               <div class="minus" onclick="buttonMinusWSport(this)"></div>
               <div class="plus" onclick="buttonPlusWSport(this)"></div>
-              <div  class="number">0</div>
+              <div  class="number">1</div>
                <input type="hidden" name="WSport">
             </div>
             <p class="book_food_text"><b>"Спорт" 1700 ккал, 6 блюд завтрак, ланч, 2 горячих блюда, 2 десердта)</b></p>
@@ -1166,7 +1166,7 @@
 
     </div>
 
-	<p class="add_food_header">Сумма заказа от:</p><p name="summ" class="add_food_header">0</p>
+	<p class="add_food_header">Сумма заказа от:</p><p name="summ" class="add_food_header">419 грн.</p>
     <button class="remodal__btn" onclick="this.innerHTML='Заявка принята'">Отправить</button>
   </form>
 
@@ -1315,8 +1315,11 @@
       </div>
 
     </div>
-    <p class="add_food_header">Сумма заказа от:</p><p name="summ"class="add_food_header">0</p>
+    <div>
+       <p class="add_food_header">Сумма заказа от:</p><p name="summ" class="add_food_header">0 грн.</p>
 
+    </div>
+   
 
         <button class="remodal__btn" onclick="this.innerHTML='Заявка принята'">Отправить</button>
     </form>
