@@ -812,6 +812,14 @@ textarea {
 	margin: 0 3px 0 3px;
 	position: relative;
 }
+.number {
+	/* line-height: 28px; */
+	font-size: 26px;
+	background-color: #ffffff;
+	color: #000000;
+	font-weight: bold;
+	text-align: center;
+}
 /* .minus:after, .plus:after {
 	text-align: center;
 	font-size: 34px;
@@ -834,13 +842,6 @@ textarea {
 /* .minus {
 	line-height: 25px;
 } */
-.number {
-	line-height: 28px;
-	font-size: 26px;
-	background-color: #ffffff;
-	color: #000000;
-	font-weight: bold;
-}
 
 .book_food_text {
 	margin-left: 10px;
