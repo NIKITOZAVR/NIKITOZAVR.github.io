@@ -804,9 +804,9 @@ textarea {
 }
 
 .minus, .plus, .number {
-	width: 25px;
+	width: 26px;
 	border-radius: 3px;
-	height: 25px;
+	height: 26px;
 	background-color: #3fdfa9;
 	float: left;
 	margin: 0 3px 0 3px;
@@ -819,6 +819,8 @@ textarea {
 	color: #000000;
 	font-weight: bold;
 	text-align: center;
+	display: table-cell;
+	vertical-align: middle;
 }
 /* .minus:after, .plus:after {
 	text-align: center;
