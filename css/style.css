@@ -627,9 +627,9 @@ html, body {
 
 .contact_block {
 	margin-top: 45px;
-	/* background-image: url(../img/map.jpg);
+	background-image: url(../img/map.jpg);
 	background-size: cover;
-	background-position: center center; */
+	background-position: center center;
 	font-family: "montserratregular";
 	color: #ffffff;
 }
@@ -648,16 +648,14 @@ html, body {
 	bottom: 0;
 
 }
-.contact_block
-.contact_header {
+.contact_block .contact_header {
 	font-family: 'montserratregular';
-	margin-top: 109px;
 	font-size: 25px;
 	text-transform: none;
   color: #ffffff;
 }
 .contact_text_block {
-	padding: 1px 0;
+	padding: 50px 0;
   background-color: rgba(0, 0, 0, 0.7);
   position: relative;
   z-index: 100;
@@ -670,6 +668,9 @@ html, body {
 	font-size: 64px;
   margin-top: 98px;
   font-family: "montserratbold";
+	text-decoration: none;
+	color: inherit;
+	display: block;
 }
 .telephone--contact {
 
@@ -680,9 +681,12 @@ html, body {
   font-family: 'montserratbold';
 }
 .address2 {
-	margin-top: 30px;
+	margin-top: 60px;
+	text-decoration: none;
+	color: inherit;
+	display: block;
 	font-size: 20px;
-	  font-family: 'montserratbold';
+  font-family: 'montserratbold';
 }
 
 
@@ -1121,9 +1125,6 @@ textarea {
 
 	.leaves_img1, .leaves_img2 {
 		display: none;
-	}
-	.contact_block {
-		/* padding: 10px; */
 	}
 	.telephone {
 		font-size: 31px;
